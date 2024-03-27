@@ -1,7 +1,7 @@
 /********** Header - GNB **********/
 const header = document.querySelector('#header');
 const aboutOffsetTop = document.querySelector('#about').offsetTop;
-const htmlCssOffsetTop = document.querySelector('#html_and_css').offsetTop;
+const webOffsetTop = document.querySelector('#web').offsetTop;
 const javascriptOffsetTop = document.querySelector('#javascript').offsetTop;
 const graphicOffsetTop = document.querySelector('#graphic').offsetTop;
 const contactOffsetTop = document.querySelector('#contact').offsetTop;
@@ -36,16 +36,16 @@ gnbLists.forEach(function (e) {
 // Tab - color
 // window.addEventListener('scroll', function () {
 //   const scrollY = this.scrollY + headerHeight;
-//   if (scrollY >= aboutOffsetTop && scrollY < htmlCssOffsetTop) {
+//   if (scrollY >= aboutOffsetTop && scrollY < webOffsetTop) {
 //     gnbLists.forEach(function (e) {
 //       e.style.color = "#222";
 //     });
 //     document.querySelector('#gnb .about a').style.color = "var(--color_main)";
-//   } else if (scrollY >= htmlCssOffsetTop && scrollY < javascriptOffsetTop) {
+//   } else if (scrollY >= webOffsetTop && scrollY < javascriptOffsetTop) {
 //     gnbLists.forEach(function (e) {
 //       e.style.color = "#222";
 //     });
-//     document.querySelector('#gnb .html_and_css a').style.color = "var(--color_main)";
+//     document.querySelector('#gnb .web a').style.color = "var(--color_main)";
 //   } else if (scrollY >= javascriptOffsetTop && scrollY < graphicOffsetTop) {
 //     gnbLists.forEach(function (e) {
 //       e.style.color = "#222";

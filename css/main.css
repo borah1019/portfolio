@@ -336,34 +336,34 @@ section .title {
   background-image: url("../img/about/ico_nature.svg");
 }
 
-/* HTML & CSS */
+/* WEB */
 
-#html_and_css {
+#web {
   position: relative;
 }
 
 @media screen and (max-width: 1440px) {
-  #html_and_css {
+  #web {
     padding: 0;
   }
 }
 
-#html_and_css .title_wrap {
+#web .title_wrap {
   top: -13%;
 }
 
 @media screen and (max-width: 800px) {
-  #html_and_css .title_wrap {
+  #web .title_wrap {
     top: -7%;
   }
 }
 
-#html_and_css .project_list {
+#web .project_list {
   background: var(--color_main);
   padding: 20px 0;
 }
 
-#html_and_css .project {
+#web .project {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -375,7 +375,7 @@ section .title {
 }
 
 @media screen and (max-width: 800px) {
-  #html_and_css .project {
+  #web .project {
     flex-direction: column;
     gap: 20px;
     padding: 80px 5%;
@@ -384,23 +384,23 @@ section .title {
 }
 
 @media screen and (min-width: 801px) {
-  #html_and_css .project:hover {
+  #web .project:hover {
     background: #fff;
     transition: all 0.2s;
   }
 }
 
-#html_and_css .project:first-child {
+#web .project:first-child {
   border-top: 2px solid #fff;
 }
 
 @media screen and (max-width: 800px) {
-  #html_and_css .project:first-child {
+  #web .project:first-child {
     border-top: 1px solid #fff;
   }
 }
 
-#html_and_css .project h3 {
+#web .project h3 {
   color: #fff;
   font-size: 50px;
   font-weight: 800;
@@ -408,33 +408,33 @@ section .title {
 }
 
 @media screen and (max-width: 1440px) {
-  #html_and_css .project h3 {
+  #web .project h3 {
     color: var(--color_gray1);
     font-size: 30px;
   }
 }
 
 @media screen and (max-width: 800px) {
-  #html_and_css .project h3 {
+  #web .project h3 {
     font-size: 30px;
     margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 801px) {
-  #html_and_css .project:hover h3 {
+  #web .project:hover h3 {
     color: var(--color_main);
   }
 }
 
-#html_and_css .project h3 b {
+#web .project h3 b {
   margin-left: 20px;
   font-size: 18px;
   color: slateblue;
   font-weight: normal;
 }
 
-#html_and_css .project p {
+#web .project p {
   width: 30%;
   line-height: 1.5;
   transition: 0.2s;
@@ -442,7 +442,7 @@ section .title {
 }
 
 @media screen and (max-width: 1440px) {
-  #html_and_css .project p {
+  #web .project p {
     display: block;
     position: absolute;
     right: 5%;
@@ -454,7 +454,7 @@ section .title {
 }
 
 @media screen and (max-width: 800px) {
-  #html_and_css .project p {
+  #web .project p {
     display: block;
     position: static;
     width: 80%;
@@ -463,17 +463,17 @@ section .title {
   }
 }
 
-#html_and_css .project:hover p {
+#web .project:hover p {
   opacity: 1;
 }
 
 @media screen and (min-width: 801px) and (max-width: 1440px) {
-  #html_and_css .project:hover p {
+  #web .project:hover p {
     opacity: 0;
   }
 }
 
-#html_and_css .project_link {
+#web .project_link {
   display: flex;
   transform: translateX(-30px);
   transition: all 0.5s;
@@ -481,13 +481,13 @@ section .title {
 }
 
 @media screen and (max-width: 1440px) {
-  #html_and_css .project .project_link {
+  #web .project .project_link {
     right: 5%;
   }
 }
 
 @media screen and (max-width: 1000px) {
-  #html_and_css .project .project_link {
+  #web .project .project_link {
     flex-direction: column;
     gap: 5px;
     align-items: flex-end;
@@ -495,7 +495,7 @@ section .title {
 }
 
 @media screen and (max-width: 800px) {
-  #html_and_css .project .project_link {
+  #web .project .project_link {
     flex-direction: row;
     gap: 15px;
     justify-content: space-between;
@@ -508,13 +508,13 @@ section .title {
 }
 
 @media screen and (min-width: 801px) {
-  #html_and_css .project:hover .project_link {
+  #web .project:hover .project_link {
     transform: translateX(0);
     opacity: 1;
   }
 }
 
-#html_and_css .project_link a {
+#web .project_link a {
   display: flex;
   gap: 10px;
   align-items: center;
@@ -523,26 +523,26 @@ section .title {
 }
 
 @media screen and (max-width: 1000px) {
-  #html_and_css .project_link a {
+  #web .project_link a {
     gap: 5px;
     padding: 0;
   }
 }
 
 @media screen and (max-width: 800px) {
-  #html_and_css .project_link a {
+  #web .project_link a {
     padding: 5px 0;
     font-size: 16px;
   }
 }
 
 @media screen and (min-width: 801px) {
-  #html_and_css .project:hover .project_link a {
+  #web .project:hover .project_link a {
     opacity: 1;
   }
 }
 
-#html_and_css .project_link a::after {
+#web .project_link a::after {
   content: '';
   width: 25px;
   height: 25px;
@@ -552,7 +552,7 @@ section .title {
 }
 
 @media screen and (max-width: 800px) {
-  #html_and_css .project_link a::after {
+  #web .project_link a::after {
     width: 20px;
     height: 20px;
     opacity: 1;
@@ -561,13 +561,13 @@ section .title {
 }
 
 @media screen and (min-width: 801px) {
-  #html_and_css .project_link a:hover::after {
+  #web .project_link a:hover::after {
     background: url(../img/common/btn_link_on.svg) no-repeat center/contain;
     opacity: 1;
   }
 }
 
-#html_and_css .project_tool {
+#web .project_tool {
   display: flex;
   gap: 15px;
   position: absolute;
@@ -575,16 +575,16 @@ section .title {
 }
 
 @media screen and (max-width: 1440px) {
-  #html_and_css .project .project_tool {
+  #web .project .project_tool {
     display: none;
   }
 }
 
-#html_and_css .project:hover .project_tool {
+#web .project:hover .project_tool {
   display: none;
 }
 
-#html_and_css .project_tool li {
+#web .project_tool li {
   padding: 8px 20px;
   border: 1px solid #fff;
   border-radius: 20px;
