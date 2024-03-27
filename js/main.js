@@ -33,34 +33,6 @@ gnbLists.forEach(function (e) {
   });
 });
 
-// Tab - color
-// window.addEventListener('scroll', function () {
-//   const scrollY = this.scrollY + headerHeight;
-//   if (scrollY >= aboutOffsetTop && scrollY < webOffsetTop) {
-//     gnbLists.forEach(function (e) {
-//       e.style.color = "#222";
-//     });
-//     document.querySelector('#gnb .about a').style.color = "var(--color_main)";
-//   } else if (scrollY >= webOffsetTop && scrollY < javascriptOffsetTop) {
-//     gnbLists.forEach(function (e) {
-//       e.style.color = "#222";
-//     });
-//     document.querySelector('#gnb .web a').style.color = "var(--color_main)";
-//   } else if (scrollY >= javascriptOffsetTop && scrollY < graphicOffsetTop) {
-//     gnbLists.forEach(function (e) {
-//       e.style.color = "#222";
-//     });
-//     document.querySelector('#gnb .javascript a').style.color = "var(--color_main)";
-//   } else if (scrollY >= graphicOffsetTop && scrollY < contactOffsetTop) {
-//     gnbLists.forEach(function (e) {
-//       e.style.color = "#222";
-//     });
-//     document.querySelector('#gnb .graphic a').style.color = "var(--color_main)";
-//   } else if (scrollY >= contactOffsetTop - headerHeight) {
-//     document.querySelector('#gnb .contact a').style.color = "var(--color_main)";
-//   }
-// });
-
 /********** ABOUT **********/
 
 // Keyword animation
@@ -80,9 +52,7 @@ gsap.to('#intro .keyword>div:nth-child(1)', {
   scrollTrigger: {
     trigger: '#intro .keyword>div:nth-child(1)',
     start: 'top 100%',
-    // end: 'top 20%',
     scrub: 4
-    // markers: true
   }
 });
 gsap.to('#intro .keyword>div:nth-child(2)', {
@@ -90,9 +60,7 @@ gsap.to('#intro .keyword>div:nth-child(2)', {
   scrollTrigger: {
     trigger: '#intro .keyword>div:nth-child(2)',
     start: 'top 100%',
-    // end: 'top 20%',
     scrub: 4
-    // markers: true
   }
 });
 gsap.to('#intro .keyword>div:nth-child(3)', {
@@ -100,9 +68,7 @@ gsap.to('#intro .keyword>div:nth-child(3)', {
   scrollTrigger: {
     trigger: '#intro .keyword>div:nth-child(3)',
     start: 'top 100%',
-    // end: 'top 20%',
     scrub: 4
-    // markers: true
   }
 });
 gsap.to('#intro .keyword>div:nth-child(4)', {
@@ -110,9 +76,7 @@ gsap.to('#intro .keyword>div:nth-child(4)', {
   scrollTrigger: {
     trigger: '#intro .keyword>div:nth-child(4)',
     start: 'top 100%',
-    // end: 'top 20%',
     scrub: 4
-    // markers: true
   }
 });
 

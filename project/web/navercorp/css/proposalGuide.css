@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+/* ProposalGuie Page */
+#proposalGuide_content .sub_content {margin-bottom: 200px; background: #f5f7f8;}
+#proposalGuide_content .content_container {width: 1130px;}
+
+#proposalGuide_content .sub_content h3 {padding: 25px 0; font-size: 20px; font-weight: 800;}
+#proposalGuide_content .sub_content h4 {margin: 15px 0; font-size: 15px; font-weight: 800;}
+
+#proposalGuide_content .sub_content .survice_list1, .survice_list2 {display: flex; justify-content: space-between; flex-wrap: wrap;}
+#proposalGuide_content .sub_content .survice_content a {display: block; padding: 30px; margin-bottom: 15px; box-sizing: border-box; width: 214px; height: 142px; background: #FFF; font-size: 15px; text-align: center; white-space: nowrap;}
+#proposalGuide_content .sub_content .survice_content a::before {content: ''; display: block; margin: 0 auto 15px; background: url(../img/common/sprite.png) no-repeat;}
+
+#proposalGuide_content .survice_list1 .survice_content:nth-child(1) a::before {background-position: 0 -153px; width: 56px; height: 46px;}
+#proposalGuide_content .survice_list1 .survice_content:nth-child(2) a::before {background-position: -61px -153px; width: 56px; height: 46px;}
+#proposalGuide_content .survice_list1 .survice_content:nth-child(3) a::before {background-position: -412px -976px; width: 62px; height: 59px;}
+#proposalGuide_content .survice_list1 .survice_content:nth-child(4) a::before {background-position: -201px -737px; width: 50px; height: 56px;}
+#proposalGuide_content .survice_list1 .survice_content:nth-child(5) a::before {background-position: -144px -1360px; width: 64px; height: 50px;}
+#proposalGuide_content .survice_list1 .survice_content:nth-child(6) a::before {background-position: -424px -1322px; width: 50px; height: 58px;}
+#proposalGuide_content .survice_list1 .survice_content:nth-child(7) a::before {background-position: 0 -1523px; width: 73px; height: 37px;}
+#proposalGuide_content .survice_list1 .survice_content:nth-child(8) a::before {background-position: -60px -1360px; width: 80px; height: 27px;}
+#proposalGuide_content .survice_list1 .survice_content:nth-child(9) a::before {background-position: -82px -1503px; width: 56px; height: 57px;}
+#proposalGuide_content .survice_list1 .survice_content:nth-child(10) a::before {background-position: -254px -679px; width: 66px; height: 53px;}
+
+#proposalGuide_content .survice_list2 .survice_content:nth-child(1) a::before {background-position: -148px -1510px; width: 60px; height: 28px;}
+#proposalGuide_content .survice_list2 .survice_content:nth-child(2) a::before {background-position: -364px -1155px; width: 83px; height: 23px;}
+#proposalGuide_content .survice_list2 .survice_content:nth-child(3) a::before {background-position: -284px -472px; width: 66px; height: 65px;}
+#proposalGuide_content .survice_list2 .survice_content:nth-child(4) a::before {background-position: 0 -254px; width: 54px; height: 51px;}
+#proposalGuide_content .survice_list2 .survice_content:nth-child(5) a::before {background-position: 0 -1500px; width: 73px; height: 17px;}
