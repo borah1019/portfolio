@@ -13,7 +13,7 @@
   <script src="./js/jq.js"></script>
   <script src="./js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+  <script class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
 </head>
 <body>
   <div id="wrap">
@@ -79,14 +79,14 @@
         <ul class="lang">
           <li><a href="#">KOR</a></li>
           <li><a href="#">ENG</a></li>
-          <button><span class="hide_txt">언어 더 보기</span></button>
         </ul>
+        <button class="btn_language_change"><span class="hide_txt">언어 바꾸기</span></button>
         <button class="btn_search_open"></button>
         <div class="search_wrap">
-          <div class="search_box">
+          <form class="search_box">
             <input type="text" placeholder="검색어를 입력하세요">
             <button type="submit">검색</button>
-          </div>
+          </form>
           <div class="recent">
             <ul>
               <li>전시 일정</li>
@@ -99,13 +99,11 @@
           <li><a href="https://www.instagram.com/pulzip/"><span class="hide_txt">인스타그램</span></a></li>
           <li><a href="https://www.youtube.com/@PULZIPmaster/videos"><span class="hide_txt">유튜브</span></a></li>
           <li><a href="https://smartstore.naver.com/pulzip_art/"><span class="hide_txt">풀짚스토어</span></a></li>
-          </span></a></li>
         </ul>
         <button class="all_menu"><span class="hide_txt">전체메뉴 보기</span></button>
-        </div>
       </div>
     </header>
-    <div id="main">
+    <main id="main">
       <div class="visual swiper">
         <ul class="swiper-wrapper">
           <li class="swiper-slide">
@@ -142,8 +140,8 @@
           </li>
         </ul>
         <div class="swiper-button">
-          <span class="swiper-button-prev"></span>
-          <span class="swiper-button-next"></span>
+          <span class="swiper-button-prev"><span class="hide_txt">이전 배너 보기</span></span>
+          <span class="swiper-button-next"><span class="hide_txt">다음 배너 보기</span></span>
         </div>
         <div class="swiper-pagination">
           <span class="hide_txt">1번 배너 보기</span>
@@ -160,13 +158,13 @@
         <span>성인 3,000원 ㅣ 학생 1,500원</span>
         <strong>휴관일</strong>
         <span>매주 월요일</span>
-        <strong><a href="">오시는길</a></strong>
+        <strong><a href="#">오시는 길</a></strong>
       </div>
       <div class="exhibition">
         <div class="inner">
           <div class="exhibition_txt main_title_txt">
             <strong>전시</strong>
-            <a href=""><span class="hide_txt">더 보기</span></a>
+            <a href="#"><span class="hide_txt">더 보기</span></a>
             <div class="swiper-button">
               <span class="swiper-button-prev"></span>
               <span class="swiper-button-next"></span>
@@ -207,13 +205,13 @@
         <div class="notice_wrap">
           <ul>
             <li>
-              <a href="">2024 풀짚공예박물관 공지 1</a>
+              <a href="#">2024 풀짚공예박물관 공지 1</a>
             </li>
             <li>
-              <a href="">2024 풀짚공예박물관 공지 2</a>
+              <a href="#">2024 풀짚공예박물관 공지 2</a>
             </li>
             <li>
-              <a href="">2024 풀짚공예박물관 공지 3</a>
+              <a href="#">2024 풀짚공예박물관 공지 3</a>
             </li>
           </ul>
         </div>
@@ -226,7 +224,7 @@
         <div class="inner">
           <div class="experience_txt main_title_txt">
             <strong>체험</strong>
-            <a href=""><span class="hide_txt">더 보기</span></a>
+            <a href="#"><span class="hide_txt">더 보기</span></a>
           </div>
           <ul>
             <li>
@@ -260,7 +258,7 @@
         <div class="inner">
           <div class="relic_txt main_title_txt">
             <strong>소장유물</strong>
-            <a href=""><span class="hide_txt">더 보기</span></a>
+            <a href="#"><span class="hide_txt">더 보기</span></a>
             <div class="swiper-button">
               <span class="swiper-button-prev"></span>
               <span class="swiper-button-next"></span>
@@ -269,25 +267,25 @@
           <div class="swiper">
             <ul class="swiper-wrapper">
               <li class="swiper-slide">
-                <a href="#" class="relic_img1"><span class="hide_txt">게시글 제목</span></a>
+                <a href="#" class="relic_img1"><span class="hide_txt">현대창작품 - 색동 둥구미</span></a>
               </li>
               <li class="swiper-slide">
-                <a href="#" class="relic_img2"><span class="hide_txt">게시글 제목</span></a>
+                <a href="#" class="relic_img2"><span class="hide_txt">현대창작품 - 봄소리</span></a>
               </li>
               <li class="swiper-slide">
-                <a href="#" class="relic_img3"><span class="hide_txt">게시글 제목</span></a>
+                <a href="#" class="relic_img3"><span class="hide_txt">현대창작품 - 엄마</span></a>
               </li>
               <li class="swiper-slide">
-                <a href="#" class="relic_img4"><span class="hide_txt">게시글 제목</span></a>
+                <a href="#" class="relic_img4"><span class="hide_txt">현대창작품 - ㄱ ㄴ ㄷ I</span></a>
               </li>
               <li class="swiper-slide">
-                <a href="#" class="relic_img5"><span class="hide_txt">게시글 제목</span></a>
+                <a href="#" class="relic_img5"><span class="hide_txt">현대창작품 - 꼭지단지</span></a>
               </li>
               <li class="swiper-slide">
-                <a href="#" class="relic_img6"><span class="hide_txt">게시글 제목</span></a>
+                <a href="#" class="relic_img6"><span class="hide_txt">현대창작품 - 파종</span></a>
               </li>
               <li class="swiper-slide">
-                <a href="#" class="relic_img7"><span class="hide_txt">게시글 제목</span></a>
+                <a href="#" class="relic_img7"><span class="hide_txt">현대창작품 - 생명의 시작</span></a>
               </li>
             </ul>
           </div>
@@ -296,7 +294,7 @@
       <div class="youtube">
         <div class="youtube_txt main_title_txt">
           <strong>풀짚브이로그</strong>
-          <a href=""><span class="hide_txt">더 보기</span></a>
+          <a href="#"><span class="hide_txt">더 보기</span></a>
         </div>
         <div class="swiper">
           <ul class="swiper-wrapper">
@@ -337,7 +335,7 @@
         <div class="inner">
           <div class="instagram_txt main_title_txt">
             <strong>Instagram @pulzip</strong>
-            <a href=""><span class="hide_txt">더 보기</span></a>
+            <a href="#"><span class="hide_txt">더 보기</span></a>
             <div class="swiper-button">
               <span class="swiper-button-prev"></span>
               <span class="swiper-button-next"></span>
@@ -368,7 +366,7 @@
         <div class="inner">
           <div class="map_txt main_title_txt">
             <strong>오시는 길</strong>
-            <a href=""><span class="hide_txt">오시는 길 페이지로 이동</span></a>
+            <a href="#"><span class="hide_txt">오시는 길 페이지로 이동</span></a>
           </div>
           <div class="map_wrap">
             <div class="map_txt">
@@ -416,17 +414,16 @@
           </div>
         </div>
       </div>
-    </div>
-
+    </main>
     <footer id="footer">
-      <div class="address">
+      <address class="address">
         <p>
           경기도 광주시 오포읍 신현리 문형산길 76, 풀짚공예박물관<br> TEL : 070-4655-4538 &nbsp;&#124;&nbsp; FAX : 031-717-4539<br> E-mail : <a href="mailto:pulzip@naver.com">pulzip@naver.com</a>
         </p>
         <span class="copyright">
           COPYRIGHT 2024 PULZIP. ALL RIGHTS RESERVED.
         </span>
-      </div>
+      </address>
     </footer>
   </div>
 </body>

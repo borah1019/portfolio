@@ -118,14 +118,6 @@ body {
   gap: 15px;
 }
 
-#header .util .lang button {
-  width: 8px;
-  height: 8px;
-  border-right: 1px solid #000;
-  border-bottom: 1px solid #000;
-  transform: translateY(2px) rotate(45deg);
-}
-
 #header .util .lang li:nth-child(1) a {
   cursor: auto;
   user-select: none;
@@ -133,6 +125,14 @@ body {
 
 #header .util .lang li:nth-child(2) {
   display: none;
+}
+
+#header .util .btn_language_change {
+  width: 8px;
+  height: 8px;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  transform: translateY(-2px) rotate(45deg);
 }
 
 #header .util .btn_search_open {
@@ -437,15 +437,31 @@ body {
 }
 
 #main .obs_info strong:nth-of-type(1)::before {
-  background: url("../img/main/pc_obs_info_ico_clock.png") no-repeat;
+  background: url("../img/main/pc_obs_info_ico_clock.png") no-repeat center/contain;
 }
 
 #main .obs_info strong:nth-of-type(2)::before {
-  background: url("../img/main/pc_obs_info_ico_wallet.png") no-repeat;
+  background: url("../img/main/pc_obs_info_ico_wallet.png") no-repeat center/contain;
 }
 
 #main .obs_info strong:nth-of-type(4)::before {
-  background: url("../img/main/pc_obs_info_ico_map.png") no-repeat;
+  background: url("../img/main/pc_obs_info_ico_map.png") no-repeat center/contain;
+}
+
+#main .obs_info strong:nth-of-type(4) {
+  display: flex;
+  align-items: center;
+}
+
+#main .obs_info strong:nth-of-type(4)::after {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin-left: -10px;
+  border-top: 2px solid #333;
+  border-right: 2px solid #333;
+  transform: rotate(45deg);
 }
 
 #main .obs_info span span {
@@ -1031,23 +1047,23 @@ body {
     gap: 7px;
     align-items: center;
   }
+  
+  #header .util .lang li:nth-child(1) {
+    display: none;
+  }
+  
+  #header .util .lang li:nth-child(2) {
+    display: none;
+    cursor: auto;
+    user-select: none;
+  }
 
-  #header .util .lang button {
+  #header .util .btn_language_change {
     width: 27px;
     height: 27px;
     border: 0;
     background: url("../img/common/m_ico_language.svg") no-repeat center;
     transform: none;
-  }
-
-  #header .util .lang li:nth-child(1) {
-    display: none;
-  }
-
-  #header .util .lang li:nth-child(2) {
-    display: none;
-    cursor: auto;
-    user-select: none;
   }
   
   #header .util .btn_search_open {
