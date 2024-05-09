@@ -88,7 +88,7 @@ gsap.to('#intro .name', {
   },
   display: 'none'
 });
-gsap.to('#about .profile img', {
+gsap.to('#about .profile_img', {
   transform: 'translateX(0)',
   scrollTrigger: {
     trigger: '#about .profile_title',
@@ -135,6 +135,7 @@ menuTab.forEach(function (e, i) {
 });
 
 /********** GRAPHIC **********/
+
 const graphic = document.querySelector('#graphic');
 const graphicProjectList1 = document.querySelectorAll('#graphic .project_list.list1 .project');
 const graphicProjectList2 = document.querySelectorAll('#graphic .project_list.list2 .project');
@@ -274,7 +275,6 @@ function contactMouseout () {
 };
 
 const contactAnimation = function () {
-  console.log(window.outerWidth)
   if (window.outerWidth <= 900) {
     contactMessage2.forEach(function (e) {
       e.style.transform = "translateX(0)";

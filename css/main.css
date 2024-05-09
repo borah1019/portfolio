@@ -62,7 +62,7 @@ section .title {
   display: block;
   font-size: 160px;
   font-weight: 800;
-  text-wrap: nowrap;
+  white-space: nowrap;
   animation: title_swipe 120s linear infinite;
 }
 
@@ -233,17 +233,17 @@ section .title {
   }
 }
 
-#about .profile img {
+#about .profile .profile_img {
   display: block;
   width: 300px;
   height: 40%;
   border-radius: 10px;
-  transform: translateX(-250%);
-  background: #eee;
+  background: url("../img/about/profile.jpg") no-repeat center/cover;
+  transform: translateX(-300%);
 }
 
 @media screen and (max-width: 800px) {
-  #about .profile img {
+  #about .profile .profile_img {
     width: 25%;
     height: 150px;
     transform: translateX(-300%);
@@ -304,7 +304,7 @@ section .title {
 
 #about .profile_interest {
   display: flex;
-  gap: 10px;
+  gap: 15px;
 }
 
 @media screen and (max-width: 800px) {
@@ -314,10 +314,10 @@ section .title {
 }
 
 #about .profile_interest li {
-  width: 40px;
-  height: 40px;
-  padding-top: 24px;
-  background: no-repeat center;
+  width: 50px;
+  height: 50px;
+  padding-top: 20px;
+  background: no-repeat bottom/contain;
 }
 
 #about .profile_interest li:nth-child(1) {
@@ -546,7 +546,7 @@ section .title {
   content: '';
   width: 25px;
   height: 25px;
-  background: url(../img/common/btn_link.svg) no-repeat center/contain;
+  background: url("../img/common/btn_link.svg") no-repeat center/contain;
   opacity: 0.1;
   transition: all 0.2s;
 }
@@ -915,7 +915,7 @@ section .title {
   display: block;
   width: 50px;
   height: 50px;
-  background: url(../img/common/btn_arrow.svg) no-repeat center/contain;
+  background: url("../img/common/btn_arrow.svg") no-repeat center/contain;
 }
 
 @media screen and (max-width: 1200px) {
