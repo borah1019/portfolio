@@ -14,20 +14,19 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./js/main.js"></script>
 </head>
-<body>lo
-  <div class="skip_nav">
-    <!-- <a href="#gnb">메인 메뉴(gnb) 바로가기</a> -->
-    <a href="#main">본문 바로가기</a>
-    <!-- <a href="#footer">푸터 메뉴 바로가기</a> -->
-  </div>
+<body>
   <div class="popup_area">
     <div class="popup1">헤더 위의 팝업</div>
     <div class="popup2">비주얼 위의 팝업</div>
   </div>
-
   <div id="wrap">
     <header id="header">
       <h1><a href="#"><span class="hide_txt">지란지교시큐리티</span></a></h1>
+      <div class="skip_nav">
+        <a href="#gnb">메인 메뉴 바로가기</a>
+        <a href="#main">본문 바로가기</a>
+        <a href="#footer">푸터 메뉴 바로가기</a>
+      </div>
       <nav>
         <ul id="gnb">
           <li class="gnb_product">
@@ -120,7 +119,7 @@
         </ul>
       </nav>
       <div class="util">
-        <button type="button" class="btn_search_open"><span class="hide_txt">검색창 열기</span></button> <!-- 읽히게 하기 위해 IR기법 사용  -->
+        <button type="button" class="btn_search_open"><span class="hide_txt">검색창 열기</span></button>
         <button type="button" class="btn_allmenu_open"><span class="hide_txt">전체메뉴 보기</span></button>
       </div>
       <div class="search_wrap">
@@ -132,7 +131,7 @@
             <button type="reset" class="txt_clear"><span class="hide_txt">검색어 삭제</span></button>
             <a type="submit" class="txt_submit"><span class="hide_txt">검색하기</span></a>
           </fieldset>
-          <div class="quick_search"> <!-- 키워드 정보를 넘겨줘야 해서 <form> 안에 넣는 게 유리. 개발자와 소통하기. -->
+          <div class="quick_search">
             <span class="quick_links">Quick Links</span>
             <a href="#">문서</a>
             <a href="#">AI</a>
@@ -250,14 +249,8 @@
       </div>
       <div class="gnb_bg"></div>
     </header>
-
     <main id="main" class="index">
       <section class="main_visual_wrap">
-        <!-- 
-          ::before로 회색배경 po:ab
-          1. 동생 inner에게 po:re
-          2. 가상요소에게 z-index: -1;
-        -->
         <div class="inner">
           <div class="vis_txt">
             <em>JIRANSECURITY</em>
@@ -280,7 +273,7 @@
               <img src="./img/main/img_main_product_threat_m.png" alt="">
               <strong>악성코드 위협 대응</strong>
               <p>위협 탐지, 차단, 예방으로<br>악성 위협에 선제 대응하세요</p>
-              <ul class="product_list">
+              <ul class="sol_product">
                 <li><a href="#">새니톡스</a></li>
                 <li><a href="#">파일론</a></li>
                 <li><a href="#">머드픽스</a></li>
@@ -290,7 +283,7 @@
               <img src="./img/main/img_main_product_mail_m.png" alt="">
               <strong>메일 보안</strong>
               <p>고도화, 지능화 되고있는<br>이메일 보안 위협에 대응하세요</p>
-              <ul class="product_list">
+              <ul class="sol_product">
                 <li><a href="#">스팸스나이퍼</a></li>
                 <li><a href="#">메일스크린</a></li>
                 <li><a href="#">제이볼트 플러스</a></li>
@@ -300,7 +293,7 @@
               <img src="./img/main/img_main_product_docu_m.png" alt="">
               <strong>문서 보안</strong>
               <p>기업의 정보 자산을<br>체계적으로 관리하세요</p>
-              <ul class="product_list">
+              <ul class="sol_product">
                 <li><a href="#">다큐원</a></li>
                 <li><a href="#">오피스하드 VEX</a></li>
               </ul>
@@ -309,7 +302,7 @@
               <img src="./img/main/img_main_product_mobile_m.png" alt="">
               <strong>모바일 보안</strong>
               <p>모바일을 통한<br>기업 정보 유출을 방지하세요</p>
-              <ul class="product_list">
+              <ul class="sol_product">
                 <li><a href="#">모바일키퍼</a></li>
                 <li><a href="#">메일세이퍼</a></li>
               </ul>
@@ -330,7 +323,7 @@
             <a href="https://www.jiransecurity.com/pr/video" class="more_arrow">영상 더보기</a>
           </div>
           <div class="video_box">
-            <iframe width="840" height="472" src="https://www.youtube.com/embed/_RAiRFQk2t0" title="지란지교시큐리티 기업 홍보영상" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> <!-- width="840" height="472" -->
+            <iframe width="840" height="472" src="https://www.youtube.com/embed/_RAiRFQk2t0" title="지란지교시큐리티 기업 홍보영상" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
         </div>
       </section>
@@ -340,59 +333,59 @@
             <h2>고객사 이야기</h2>
             <p>지란지교시큐리티 고객사의 목소리를 직접 들어보세요.</p>
           </hgroup>
-          <div class="customer_slider_wrap">
-            <div class="customer_slider_mask swiper"> <!-- 슬라이드 마스크 (2개씩 보이게) -->
-              <div class="customer_slider swiper-wrapper"> <!-- 슬라이드될 화면의 부모 박스(모든 슬라이드를 포함한 가로 크기)-->
-                <div class="customer_slide_box swiper-slide"> <!-- 슬라이드될 화면 -->
-                  <div class="customer_title_box">
+          <div class="cus_slider_wrap">
+            <div class="cus_slider_mask swiper">
+              <div class="cus_slider swiper-wrapper">
+                <div class="cus_slide_box swiper-slide">
+                  <div class="cus_title_box">
                     <h3>
                       <img src="./img/main/customer_logo_1.png" alt="">
                       <span>현대로템</span>
                     </h3>
-                    <strong class="product_1"><span class="hide_txt">오피스하드 VEX</span></strong>
+                    <strong class="cus_product_1"><span class="hide_txt">오피스하드 VEX</span></strong>
                   </div>
-                  <div class="customer_txt_box">
+                  <div class="cus_txt_box">
                     <p>수 년째 보안 파일 서버를 이용해 업무를 하는데 업무 특성상 대용량 파일을 사용하는 경우가 잦아 내부 직원들과 파일 공유의 어려움을 겪어 왔어요. 오피스하드를 사용하면서 용량에 상관없이 자유롭게 파일을 공유할 수 있었고 오피스하드가 아니었다면 매년 용량 증설이 필요했을 방대한 파일 작업에서도 많은 도움을 받았답니다. 특히나 대용량 파일을 해외 사용자도 인증하면 함께 이용할 수 있어 메일의 첨부파일로 전달할 때의 불편함이 해소되었어요.</p>
-                    <span class="customer_team">ICT 기획팀</span>
+                    <span class="cus_team">ICT 기획팀</span>
                   </div>
                 </div>
-                <div class="customer_slide_box swiper-slide"> <!-- 슬라이드될 화면 -->
-                  <div class="customer_title_box">
+                <div class="cus_slide_box swiper-slide">
+                  <div class="cus_title_box">
                     <h3>
                       <img src="./img/main/customer_logo_4.png" alt="">
                       <span>C ICT 전문기업 </span>
                     </h3>
-                    <strong class="product_2"><span class="hide_txt">스팸스나이퍼</span></strong>
+                    <strong class="cus_product_2"><span class="hide_txt">스팸스나이퍼</span></strong>
                   </div>
-                  <div class="customer_txt_box">
+                  <div class="cus_txt_box">
                     <p>365*24시간 기술지원이 가능하여 안정적인 운영 환경을 제공하여 안심할 수 있고 다양한 레퍼런스를 보유하고 있어 이메일 보안에 대한 계획을 수립할 때 많은 도움을 받았어요. 주요 사용 기능으로는 첨부 파일을 통한 랜섬웨어 공격 방어를 위해  유해 컨텐츠 차단 기능을 사용하며 이외 Hash 차단 기능 등 다양한 보안 기능 활용 하여 안전한 환경을 구성할 수 있어 안심하며 사용하고 있어요.</p>
-                    <span class="customer_team">보안 인프라팀</span>
+                    <span class="cus_team">보안 인프라팀</span>
                   </div>
                 </div>
-                <div class="customer_slide_box swiper-slide"> <!-- 슬라이드될 화면 -->
-                  <div class="customer_title_box">
+                <div class="cus_slide_box swiper-slide">
+                  <div class="cus_title_box">
                     <h3>
                       <img src="./img/main/customer_logo_3.png" alt="">
                       <span>월드비전</span>
                     </h3>
-                    <strong class="product_3"><span class="hide_txt">다큐원</span></strong>
+                    <strong class="cus_product_3"><span class="hide_txt">다큐원</span></strong>
                   </div>
-                  <div class="customer_txt_box">
+                  <div class="cus_txt_box">
                     <p>다큐원을 통해 파일 저장 시 전임 사용자의 모든 파일을 후임 사용자에게 안전하게 인수/인계할 수 있어 파일 유실을 막을 수 있었어요. 또한 파일 업로드 시 개인정보 검출을 통하여 정보보호를 안전하게 지킬 수 있으며, 외부 반출 시 결재/승인 프로세스를 통하여 내부 파일 또한 안전하게 지킬 수 있게 되었어요. 업무 상 협업이 많은데 공유폴더를 통하여 효율적으로 업무를 임할 수 있어 업무처리 향상에 큰 도움 되었답니다.</p>
-                    <span class="customer_team">IT팀</span>
+                    <span class="cus_team">IT팀</span>
                   </div>
                 </div>
-                <div class="customer_slide_box swiper-slide"> <!-- 슬라이드될 화면 -->
-                  <div class="customer_title_box">
+                <div class="cus_slide_box swiper-slide">
+                  <div class="cus_title_box">
                     <h3>
                       <img src="./img/main/customer_logo_2.png" alt="">
                       <span>대교</span>
                     </h3>
-                    <strong class="product_4"><span class="hide_txt">모바일키퍼</span></strong>
+                    <strong class="cus_product_4"><span class="hide_txt">모바일키퍼</span></strong>
                   </div>
-                  <div class="customer_txt_box">
+                  <div class="cus_txt_box">
                     <p>모바일키퍼로 전국 1,000여개 러닝센터, 40,000여개 모바일 태블릿 단말을 효율적으로 보급하고, 각 센터별 단말기 사용량을 분석하여 필요한 단말기 수량을 사전에 예측하여 적극적인 재고관리 및 단말 보급에 활용하고 있어요. 또한 교육 컨텐츠에 대한 사용시간 등의 이력 분석을 통해 주요 컨텐츠별 서비스 성과를 지표삼아 향후 사업전략 수립에 주요 지표로 활용할 수 있어 큰 도움을 받았어요.</p>
-                    <span class="customer_team">IT 기획팀</span>
+                    <span class="cus_team">IT 기획팀</span>
                   </div>
                 </div>
               </div>
@@ -406,12 +399,7 @@
               </button>
             </div>
           </div>
-          <div class="dot_btns">
-            <!-- <button class="slide_on"><span class="hide_txt">첫 번째</span></button>
-            <button><span class="hide_txt">두 번째</span></button>
-            <button><span class="hide_txt">세 번째</span></button>
-            <button><span class="hide_txt">네 번째</span></button> -->
-          </div>
+          <div class="btns_dot"></div>
         </div>
       </section>
       <section class="main_news_wrap">
@@ -464,7 +452,6 @@
         </div>
       </section>
     </main>
-    
     <footer id="footer">
       <div class="inner">
         <div class="footer1">
@@ -520,42 +507,9 @@
       </div>
     </footer>
   </div>
-
   <div class="btn_fixed">
     <a href="#" class="btn_inquire"><span class="hide_txt">문의하기</span></a>
     <a href="#wrap" class="btn_go_top"><span class="hide_txt">맨 위로 이동</span></a>
   </div>
-
 </body>
 </html>
-
-<!-- 
-  1. header + main + footer 구분
-  2. 각 영역이 행으로 구분되는지 확인
-    - hedaer (1행)
-    - footer (1행)
-    - main (5행)
-  3. 각 영역의 행마다 content-container(.inner) 확인
-  4. 각 content-container 안에 가로방향(세로방향)으로 분리되는 영역을 확인
-
-  * 요소의 마크업
-  - header부터 전체 구조에 따라 하나씩
-
-  ※ 웹접근성에 따른 스킵네비게이션 => 맨 처음 작성
-  - 팝업 섹션 => wrap 이전에 작성
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
--->

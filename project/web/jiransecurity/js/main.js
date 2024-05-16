@@ -1,6 +1,7 @@
 $(function() {
-  
-  /* GNB */
+  /* Header */
+
+  // GNB
   $('#gnb>li').mouseenter(function () {
     $(this).children().css({
       'display' : 'flex',
@@ -15,7 +16,7 @@ $(function() {
     $('#header .gnb_bg').hide();
   });
 
-  /* Search */
+  // Search
   $('.util .btn_search_open').click(function () {
     $('.search_wrap').show();
   });
@@ -23,8 +24,7 @@ $(function() {
     $('.search_wrap').hide();
   });
 
-  /* All menu */
-  // PC
+  // All menu - PC
   $('.util .btn_allmenu_open').click(function () {
     $('.allmenu_wrap').show();
     $('html').css('overflow', 'hidden');
@@ -33,7 +33,8 @@ $(function() {
     $('.allmenu_wrap').hide();
     $('html').css('overflow', 'auto');
   });
-  // Mobile
+
+  // All menu - Mobile
   $('.allmenu_list>li>a').click(function() {
     $(this).addClass('active');
     $('.allmenu_list>li>a').not(this).removeClass('active');
@@ -42,32 +43,35 @@ $(function() {
     $(this).addClass('active');
     $('.allmenu_list>.allmenu_product>.dep2>li>a').not(this).removeClass('active');
   });
+
+  /* Footer */
+
+  // Family Site
   $('.family_site_box button').click(function () {
-    // $('.family_site_box ul').show();
     $(this).next().toggle();
   });
 
-  /* Customer */
+  /* Customer Wrap */
+
   // Swiper
   const customerSwiper = new Swiper('.swiper', {
-    // Optional parameters
     loop: true,
     spaceBetween: 20,
     slidesPerView: 1,
     autoplay: {
-      delay: 1000
+      delay: 3000
     },
     breakpoints: {
-      510: {
+      650: {
         slidesPerView: 2
       }
     },
     pagination: {
-      el: '.main_customer_wrap .dot_btns',
+      el: '.main_customer_wrap .btns_dot',
     },
     navigation: {
       nextEl: '.main_customer_wrap .next_btn',
       prevEl: '.main_customer_wrap .prev_btn',
     }
   });
-})
+});

@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/project/js/toDoList/static/css/main.11a4ac38.css",
-    "main.js": "/project/js/toDoList/static/js/main.f6b8b19f.js",
-    "static/js/453.7c6c8075.chunk.js": "/project/js/toDoList/static/js/453.7c6c8075.chunk.js",
-    "index.html": "/project/js/toDoList/index.html",
-    "main.11a4ac38.css.map": "/project/js/toDoList/static/css/main.11a4ac38.css.map",
-    "main.f6b8b19f.js.map": "/project/js/toDoList/static/js/main.f6b8b19f.js.map",
-    "453.7c6c8075.chunk.js.map": "/project/js/toDoList/static/js/453.7c6c8075.chunk.js.map"
+    "main.css": "/borah1019/portfolio/tree/main/project/javascript/toDoList/static/css/main.11a4ac38.css",
+    "main.js": "/borah1019/portfolio/tree/main/project/javascript/toDoList/static/js/main.e6e65bd6.js",
+    "static/js/453.7c6c8075.chunk.js": "/borah1019/portfolio/tree/main/project/javascript/toDoList/static/js/453.7c6c8075.chunk.js",
+    "index.html": "/borah1019/portfolio/tree/main/project/javascript/toDoList/index.html",
+    "main.11a4ac38.css.map": "/borah1019/portfolio/tree/main/project/javascript/toDoList/static/css/main.11a4ac38.css.map",
+    "main.e6e65bd6.js.map": "/borah1019/portfolio/tree/main/project/javascript/toDoList/static/js/main.e6e65bd6.js.map",
+    "453.7c6c8075.chunk.js.map": "/borah1019/portfolio/tree/main/project/javascript/toDoList/static/js/453.7c6c8075.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.11a4ac38.css",
-    "static/js/main.f6b8b19f.js"
+    "static/js/main.e6e65bd6.js"
   ]
 }

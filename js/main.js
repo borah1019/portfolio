@@ -39,7 +39,7 @@ gnbLists.forEach(function (e) {
 gsap.to('#intro .name', {
   opacity: 0,
   scrollTrigger: {
-    trigger: '#intro .keyword>div:nth-child(4)',
+    trigger: '#intro .keyword>div:nth-child(3)',
     start: 'bottom 100%',
     end: 'bottom 75%',
     scrub: 2,
@@ -67,14 +67,6 @@ gsap.to('#intro .keyword>div:nth-child(3)', {
   top: -280,
   scrollTrigger: {
     trigger: '#intro .keyword>div:nth-child(3)',
-    start: 'top 100%',
-    scrub: 4
-  }
-});
-gsap.to('#intro .keyword>div:nth-child(4)', {
-  top: -280,
-  scrollTrigger: {
-    trigger: '#intro .keyword>div:nth-child(4)',
     start: 'top 100%',
     scrub: 4
   }

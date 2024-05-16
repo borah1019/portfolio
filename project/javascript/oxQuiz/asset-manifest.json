@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/project/js/oxQuiz/static/css/main.27b8db03.css",
-    "main.js": "/project/js/oxQuiz/static/js/main.04c4fb98.js",
-    "static/js/453.4d12c54e.chunk.js": "/project/js/oxQuiz/static/js/453.4d12c54e.chunk.js",
-    "index.html": "/project/js/oxQuiz/index.html",
-    "main.27b8db03.css.map": "/project/js/oxQuiz/static/css/main.27b8db03.css.map",
-    "main.04c4fb98.js.map": "/project/js/oxQuiz/static/js/main.04c4fb98.js.map",
-    "453.4d12c54e.chunk.js.map": "/project/js/oxQuiz/static/js/453.4d12c54e.chunk.js.map"
+    "main.css": "/borah1019/portfolio/tree/main/project/javascript/oxQuiz/static/css/main.27b8db03.css",
+    "main.js": "/borah1019/portfolio/tree/main/project/javascript/oxQuiz/static/js/main.de9669f0.js",
+    "static/js/453.4d12c54e.chunk.js": "/borah1019/portfolio/tree/main/project/javascript/oxQuiz/static/js/453.4d12c54e.chunk.js",
+    "index.html": "/borah1019/portfolio/tree/main/project/javascript/oxQuiz/index.html",
+    "main.27b8db03.css.map": "/borah1019/portfolio/tree/main/project/javascript/oxQuiz/static/css/main.27b8db03.css.map",
+    "main.de9669f0.js.map": "/borah1019/portfolio/tree/main/project/javascript/oxQuiz/static/js/main.de9669f0.js.map",
+    "453.4d12c54e.chunk.js.map": "/borah1019/portfolio/tree/main/project/javascript/oxQuiz/static/js/453.4d12c54e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.27b8db03.css",
-    "static/js/main.04c4fb98.js"
+    "static/js/main.de9669f0.js"
   ]
 }
