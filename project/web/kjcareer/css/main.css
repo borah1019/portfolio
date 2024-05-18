@@ -671,10 +671,12 @@ body {
 
 #main .business6 .inner {
   display: flex;
+  align-items: center;
 }
 
 #main .business6 .center_list_box .center_list {
   width: 650px;
+  min-height: 340px;
 }
 
 #main .business6 .tabs {
@@ -858,7 +860,7 @@ body {
 }
 
 #main .business6 .center_map_box .map_img {
-  margin: auto;
+  margin: 55px auto 0;
 }
 
 #main .business6 .center_map_box .map_img img {
@@ -881,7 +883,7 @@ body::before {
 
 }
 
-/* PC */
+/********** PC **********/
 
 @media screen and (min-width: 1280px) {
 
@@ -919,7 +921,6 @@ body::before {
   }
 
   #header #gnb .dep2 {
-    display: grid;
     display: none;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -1235,7 +1236,7 @@ body::before {
   
 }
 
-/* Tab3 */
+/********** Tab3 **********/
 
 @media screen and (max-width: 1279px) {
 
@@ -1251,7 +1252,11 @@ body::before {
     width: 133px;
     height: 23px;
   }
-  
+
+  #header #gnb {
+    display: none;
+  }
+
   #header .util {
     right: 3%;
   }
@@ -1514,7 +1519,7 @@ body::before {
 
 }
 
-/* Tab2 */
+/********** Tab2 **********/
 
 @media screen and (max-width: 1023px) {
 
@@ -1524,10 +1529,6 @@ body::before {
 
   #header .util a {
     border: 1px solid #4b4b4b;
-  }
-  
-  #header #gnb .dep2 {
-    display: none;
   }
 
   /* Footer */
@@ -1736,7 +1737,7 @@ body::before {
 
 }
 
-/* Tab1 */
+/********** Tab1 **********/
 
 @media screen and (max-width: 768px) {
   
@@ -1876,7 +1877,7 @@ body::before {
   }
 }
 
-/* Mob */
+/********** Mob **********/
 
 @media screen and (max-width: 480px) {
 

@@ -25,11 +25,13 @@ gnbLists.forEach(function (e) {
     gnbLists.forEach(function (e) {
       e.style.color = "#222";
     });
-    this.style.color = "var(--color_main)";
     const thisTab = this.parentElement.className;
     e.preventDefault();
     const moveToSection = document.querySelector('#' + thisTab + '').offsetTop - headerHeight;
     window.scrollTo({top: moveToSection, behavior: "smooth" });
+  });
+  e.addEventListener('mousedown', function () {
+    this.style.color = "var(--color_main)";
   });
 });
 
