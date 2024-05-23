@@ -254,14 +254,14 @@ const contactMessage1 = document.querySelector('#contact .message1');
 const contactMessage2 = document.querySelectorAll('#contact .message2');
 
 function contactMouseover() {
-  contactMessage1.style.transform = "translate(-120%)";
+  contactMessage1.style.transform = "translateX(-120%)";
   contactMessage2[0].style.transform = "translateX(0)";
   setTimeout(() => {
   contactMessage2[1].style.transform = "translateX(0)";
   }, 50);
 }
 function contactMouseout () {
-  contactMessage1.style.transform = "translate(0)";
+  contactMessage1.style.transform = "translateX(0)";
   contactMessage2[0].style.transform = "translateX(-120%)";
   setTimeout(() => {
   contactMessage2[1].style.transform = "translateX(-120%)";

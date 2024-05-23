@@ -1033,6 +1033,18 @@ section .title {
   }
 }
 
+#contact .message2 {
+  color: var(--color_main);
+  -webkit-text-stroke: 3px var(--color_main);
+  transform: translateX(-120%);
+}
+
+@media screen and (max-width: 900px) {
+  #contact .message2 {
+    transform: translateX(0);
+  }
+}
+
 #contact .message2:nth-child(2) {
   bottom: 150px;
 }
@@ -1050,20 +1062,6 @@ section .title {
 @media screen and (max-width: 900px) {
   #contact .message2 br {
     display: block;
-  }
-}
-
-#contact .message2,
-#contact .message3 {
-  color: var(--color_main);
-  -webkit-text-stroke: 3px var(--color_main);
-  transform: translateX(-120%);
-}
-
-@media screen and (max-width: 900px) {
-  #contact .message2,
-  #contact .message3 {
-    transform: translateX(0);
   }
 }
 
