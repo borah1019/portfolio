@@ -131,8 +131,11 @@ menuTab.forEach(function (e, i) {
 /********** GRAPHIC **********/
 
 const graphic = document.querySelector('#graphic');
-const graphicProjectList1 = document.querySelectorAll('#graphic .project_list.list1 .project');
-const graphicProjectList2 = document.querySelectorAll('#graphic .project_list.list2 .project');
+const graphicProjectList = document.querySelectorAll('#graphic .project_list');
+const graphicProjectList1 = document.querySelectorAll('#graphic .project_list:nth-child(1) .project');
+const graphicProjectList2 = document.querySelectorAll('#graphic .project_list:nth-child(2) .project');
+const graphicProjects = document.querySelectorAll('#graphic .project');
+const graphicProjectListLength = graphicProjects.length / 2;
 
 // Swipe
 graphicProjectList1.forEach(function (e) {
@@ -157,10 +160,10 @@ graphicProjectList2.forEach(function (e) {
   });
 });
 
-// Modal
-const graphicProjectList = document.querySelectorAll('#graphic .project_list');
-const graphicProjects = document.querySelectorAll('#graphic .project');
-const graphicProjectListLength = graphicProjects.length / 2;
+// Thumbnail
+
+
+// Modal box
 const graphicModal = document.querySelector('#graphic .project_modal');
 const graphicModalWrap = document.querySelector('#graphic .project_modal .modal_wrap');
 const graphicModalPagination = document.querySelectorAll('#graphic .modal_wrap .pagination span');
@@ -178,35 +181,35 @@ document.querySelector('#graphic .btn_close').addEventListener('click', function
   graphicModalWrap.style.display = 'none';
 });
 
-// Data
+// Modal Data
 const graphicProjectsData = [
   {
     title: '에어팟 광고',
-    content: '일러스트레이터로 제작한 에어팟 광고 포스터입니다. 에어팟을 의인화한 스토리텔링에 중점을 두었습니다.',
+    content: '개인적으로 작업한 에어팟 광고 포스터입니다. 에어팟을 의인화하여 일러스트로 표현하였으며, 스토리텔링에 중점을 두었습니다.',
   }, {
     title: '몬스터 주식회사',
-    content: '포토샵으로 제작한 영화 포스터입니다. 시각적인 강조 효과를 위해 대각선 구도와 컬러를 활용하였습니다.',
+    content: '개인적으로 제작한 영화 포스터입니다. 긴장감을 조성하고, 시각적인 강조 효과를 주기 위해 대각선 구도와 컬러를 활용하였습니다.',
   }, {
     title: 'Free Willy',
-    content: '일러스트레이터로 제작한 영화 포스터입니다. 리소그라피 인쇄에 초점을 두어 작업하였습니다.',
+    content: '개인적으로 제작한 영화 포스터입니다. 리소그라피 인쇄를 활용하여, 범고래에게 자유를 주는 요소들과 범고래의 자유를 가로막는 것들을 시각적으로 대조하여 표현하였습니다.',
   }, {
-    title: '돌고',
-    content: '써니킴 작가의 돌고라는 작품을 보고 일러스트레이터로 제작한 포스터입니다. 도형을 가지고 이 도형들이 서로서로 관계를 맺어 가는 느낌으로 작업하였습니다.',
-  }, {
-    title: '나무',
-    content: '써니킴 작가의 나무라는 작품을 보고 일러스트레이터로 제작한 포스터입니다. 크롭에 중점을 두어 작업하였습니다.',
+    title: '문구 디자인',
+    content: '문구 회사에서 개발했던 자연을 소재로 한 문구 스티커들입니다. 자연의 다양한 이야기를 제품에 옮겨 담아 더욱 감성적으로 디자인하였습니다.',
   }, {
     title: '우울하면 도움될 지도',
-    content: '일러스트레이터로 제작한 지도입니다. 우울할 때 들릴 수 있는 비밀 장소들을 일러스트로 소개합니다.',
+    content: '‘우울할 때 도움이 되는 지도’와 ‘우울할 때 도움이 될 것 같기도’ 라는 두 가지의 뜻을 동시에 내포하는 지도입니다. 기분이 울적해서 집에 곧장 들어가기 싫을 때, 남들의 눈치를 보거나 돈을 쓸 필요 없이 마음껏 마음을 삭이고 들어갈 수 있는 비밀 장소를 소개한 작업입니다. (봉천동 한정)',
+  }, {
+    title: 'SNS 배너',
+    content: '식품 회사에서 제작했던 인스타그램 업로드용 배너들입니다. 이벤트와 카드뉴스, 레시피 영상 등 다채로운 콘텐츠를 기획하고 디자인하였습니다.',
   }, {
     title: 'Everyone has treasures',
-    content: '일러스트레이터로 제작한 전시 포스터입니다. 보물에 대한 메시지를 전합니다.',
+    content: '보물에 대한 메시지를 전하는 전시의 포스터입니다. 꼭 금은보화만이 보물이 아닙니다. ‘보물은 누구에게나 있다’는 메시지를 전합니다.',
   }, {
     title: '에어팟 광고2',
-    content: '포토샵으로 제작한 에어팟 광고 포스터입니다. 선이 없어 편리한 제품의 장점을 강조하고자 하였습니다.',
+    content: '개인적으로 작업한 에어팟 광고 포스터입니다. 선이 없어 편리한 에어팟의 강점을 살리고자, 반대로 선이 있는 이어폰의 불편함을 시각적으로 극대화 하였습니다.',
   }, {
     title: '풀 엮고 흙 빚어',
-    content: '일러스트레이터로 제작한 전시 포스터입니다. 블렌드 효과를 중점으로 작업하였습니다.',
+    content: '개인적으로 작업한 ‘풀 엮고 흙 빚어’ 전시의 포스터입니다. 흙과 풀이 연상되는 컬러를 활용하였으며, 엮는 과정에서 풀이 엇갈리게 되는 모습을 떠올리며 블렌딩 효과를 넣은 요소들이 서로 엇갈리도록 배치하였습니다.',
   }, {
     title: 'How to wear a bracelet alone',
     content: '일러스트레이터로 제작한 포스터입니다. 혼자 팔찌를 착용하는 방법을 일러스트로 소개합니다.',
@@ -217,14 +220,13 @@ graphicProjectList.forEach(function (e) {
   e.querySelectorAll('.project').forEach(function (e, i) {
     let index = i;
     const graphicData = function () {
-      const projectImg = document.querySelectorAll('#graphic .project img')[index].getAttribute('src');
       const projectTitle = graphicProjectsData[index].title;
       const projectContent = graphicProjectsData[index].content;
-      const graphicModalImg = document.querySelector('#graphic .project_modal img');
+      const graphicModalImg = document.querySelector('#graphic .project_modal .project_img');
       const graphicModalTitle = document.querySelector('#graphic .project_modal .project_txt h2');
       const graphicModalContent = document.querySelector('#graphic .project_modal .project_txt p');
 
-      graphicModalImg.setAttribute('src', projectImg);
+      graphicModalImg.style.backgroundImage = `url("../project/graphic/graphic_project${index + 1}.jpg")`;
       graphicModalTitle.innerText = projectTitle;
       graphicModalContent.innerText = projectContent;
 
