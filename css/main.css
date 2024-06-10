@@ -854,7 +854,7 @@ section .title {
 }
 
 #graphic .project_modal .modal_wrap {
-  /* overflow: hidden; */
+  overflow: hidden;
   position: fixed;
   left: 50%;
   top: 50%;

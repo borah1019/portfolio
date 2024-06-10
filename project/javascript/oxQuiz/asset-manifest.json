@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/portfolio/project/javascript/oxQuiz/static/css/main.f4831479.css",
+    "main.css": "/portfolio/project/javascript/oxQuiz/static/css/main.239a73ab.css",
     "main.js": "/portfolio/project/javascript/oxQuiz/static/js/main.7bbcf980.js",
     "static/js/453.4d12c54e.chunk.js": "/portfolio/project/javascript/oxQuiz/static/js/453.4d12c54e.chunk.js",
     "index.html": "/portfolio/project/javascript/oxQuiz/index.html",
-    "main.f4831479.css.map": "/portfolio/project/javascript/oxQuiz/static/css/main.f4831479.css.map",
+    "main.239a73ab.css.map": "/portfolio/project/javascript/oxQuiz/static/css/main.239a73ab.css.map",
     "main.7bbcf980.js.map": "/portfolio/project/javascript/oxQuiz/static/js/main.7bbcf980.js.map",
     "453.4d12c54e.chunk.js.map": "/portfolio/project/javascript/oxQuiz/static/js/453.4d12c54e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f4831479.css",
+    "static/css/main.239a73ab.css",
     "static/js/main.7bbcf980.js"
   ]
 }
