@@ -226,7 +226,7 @@ graphicProjectList.forEach(function (e) {
       const graphicModalTitle = document.querySelector('#graphic .project_modal .project_txt h2');
       const graphicModalContent = document.querySelector('#graphic .project_modal .project_txt p');
 
-      graphicModalImg.style.backgroundImage = `url("../project/graphic/graphic_project${index + 1}.jpg")`;
+      graphicModalImg.style.backgroundImage = `url("./project/graphic/graphic_project${index + 1}.jpg")`;
       graphicModalTitle.innerText = projectTitle;
       graphicModalContent.innerText = projectContent;
 
