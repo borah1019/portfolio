@@ -36,7 +36,6 @@ gnbLists.forEach(function (e) {
 });
 
 /********** ABOUT **********/
-
 // Keyword animation
 gsap.to('#intro .name', {
   opacity: 0,
@@ -129,7 +128,6 @@ menuTab.forEach(function (e, i) {
 });
 
 /********** GRAPHIC **********/
-
 const graphic = document.querySelector('#graphic');
 const graphicProjectList = document.querySelectorAll('#graphic .project_list');
 const graphicProjectList1 = document.querySelectorAll('#graphic .project_list:nth-child(1) .project');
@@ -159,9 +157,6 @@ graphicProjectList2.forEach(function (e) {
     this.parentElement.previousElementSibling.style.animationPlayState = "running";
   });
 });
-
-// Thumbnail
-
 
 // Modal box
 const graphicModal = document.querySelector('#graphic .project_modal');
