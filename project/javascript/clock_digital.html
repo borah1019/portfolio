@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>23_시계</title>
+  <style>
+    @font-face {
+      font-family: 'DS-Digital_b';
+      src: url(font/ds_digital/DS-DIGIB.TTF);
+    }
+
+    body {
+      margin: 10vh;
+      font-family: 'DS-Digital_b';
+      text-align: center;
+    }
+
+    .clock_wrap {
+      margin: auto;
+      width: 500px;
+      height: 300px;
+      background: url(img/clock_digital.jpg) no-repeat center/contain;
+      background-size: 100%;
+    }
+
+    .clock_wrap span {
+      font-size: 75px;
+    }
+
+    .time_wrap {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      padding: 135px 0 0 110px;
+      box-sizing: border-box;
+      color: #fff;
+      transform: skew(0, 8deg);
+    }
+
+    .time_wrap .sec_display {
+      font-size: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="clock_wrap">
+    <div class="time_wrap">
+      <b>AM</b>
+      <span class="hour_display">00</span>
+      <b>:</b>
+      <span class="min_display">00</span>
+      <b>:</b>
+      <span class="sec_display">00</span>
+    </div>
+  </div>
+  </div>
+  <script>
+    function clock() {
+      const now = new Date();
+      let h = now.getHours();
+      let ampm = (h > 12) ? 'PM' : 'AM';
+      document.querySelector('.time_wrap b').innerHTML = ampm;
+      h = (h > 12) ? (h - 12) : h;
+      document.querySelector('.hour_display').innerHTML = convert(h);
+      let m = now.getMinutes();
+      document.querySelector('.min_display').innerHTML = convert(m);
+      let s = now.getSeconds();
+      document.querySelector('.sec_display').innerHTML = convert(s);
+    }
+    setInterval(clock, 1000)
+    function convert(t) {
+      t = (t < 10) ? ('0' + t) : t;
+      return t;
+    }
+  </script>
+</body>
+</html>

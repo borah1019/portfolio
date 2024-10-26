@@ -105,8 +105,6 @@ gsap.to('#about .profile_title', {
 /********** JAVASCRIPT **********/
 const menuTab = document.querySelectorAll('#javascript .menu li a');
 const projectList = document.querySelectorAll('#javascript .project');
-const h2List = document.querySelectorAll('#javascript .project h2');
-const h2TextList = [];
 
 // Menu select
 menuTab[0].style.background = "var(--color_main)";
@@ -218,7 +216,7 @@ graphicProjectList.forEach(function (e) {
       const projectTitle = graphicProjectsData[index].title;
       const projectContent = graphicProjectsData[index].content;
       const graphicModalImg = document.querySelector('#graphic .project_modal .project_img');
-      const graphicModalTitle = document.querySelector('#graphic .project_modal .project_txt h2');
+      const graphicModalTitle = document.querySelector('#graphic .project_modal .project_txt h3');
       const graphicModalContent = document.querySelector('#graphic .project_modal .project_txt p');
 
       graphicModalImg.style.backgroundImage = `url("./project/graphic/graphic_project${index + 1}.jpg")`;
