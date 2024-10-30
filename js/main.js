@@ -264,13 +264,16 @@ function contactMouseout () {
 };
 
 const contactAnimation = function () {
-  if (window.outerWidth <= 900) {
+  if (window.outerWidth <= 800) {
+    contactMessage1.style.transform = "translateX(-120%)";
     contactMessage2.forEach(function (e) {
       e.style.transform = "translateX(0)";
+      console.log('작동');
     });
     mailIcon.removeEventListener('mouseover', contactMouseover);
     mailIcon.removeEventListener('mouseout', contactMouseout);
-  } else if (window.outerWidth > 900) {
+  } else if (window.outerWidth > 800) {
+    contactMessage1.style.transform = "translateX(0)";
     contactMessage2.forEach(function (e) {
       e.style.transform = "translateX(-120%)";
     });
