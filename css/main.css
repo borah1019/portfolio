@@ -191,7 +191,7 @@ section .title {
 
 @media screen and (max-width: 800px) {
   #intro .animation .keyword>div {
-    font-size: 120px;
+    font-size: 100px;
   }
 }
 
@@ -200,9 +200,22 @@ section .title {
   top: 97vh;
 }
 
+@media screen and (max-width: 800px) {
+  #intro .animation .keyword>div:nth-child(1),
+  #intro .animation .keyword>div:nth-child(3) {
+    margin-left: -10%;
+  }
+}
+
 #intro .animation .keyword>div:nth-child(2) {
   margin-left: 35%;
   top: 147vh;
+}
+
+@media screen and (max-width: 800px) {
+  #intro .animation .keyword>div:nth-child(2) {
+    margin-left: 10%;
+  }
 }
 
 #intro .animation .keyword>div:nth-child(3) {
@@ -210,10 +223,6 @@ section .title {
   top: 197vh;
 }
 
-#intro .animation .keyword>div:nth-child(4) {
-  margin-left: -15%;
-  top: 247vh;
-}
 
 /* ABOUT */
 
