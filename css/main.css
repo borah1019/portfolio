@@ -1,13 +1,4 @@
-body * {
-  color: var(--color_gray1);
-  font-family: Pretendard, sans-serif;
-}
-
-@media screen and (max-width: 800px) {
-  ::-webkit-scrollbar {
-    display: none;
-  }
-}
+/* COMMON */
 
 :root {
   /* color */
@@ -15,6 +6,15 @@ body * {
   --color_gray1: #222;
   /* font */
   --font_bold: 600;
+}
+
+body * {
+  color: var(--color_gray1);
+  font-family: Pretendard, sans-serif;
+}
+
+#wrap {
+  overflow: hidden;
 }
 
 .sr-only {
@@ -29,18 +29,11 @@ body * {
   clip: rect(0, 0, 0, 0);
 }
 
-h2 {
-  font-size: 70px;
-  font-weight: var(--font_bold);
-}
-
-/* COMMON */
-
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
   body::-webkit-scrollbar {
     display: none;
   }
-}
+} */
 
 section {
   height: auto;
@@ -77,6 +70,11 @@ section .title {
 @keyframes title_swipe {
   from {transform: translateX(0)}
   to {transform: translateX(calc(100% + 30px))}
+}
+
+h2 {
+  font-size: 70px;
+  font-weight: var(--font_bold);
 }
 
 /* HOME */
@@ -694,13 +692,6 @@ section .title {
   height: 100%;
 }
 
-@media screen and (max-width: 800px) {
-  #javascript iframe {
-    width: 100%;
-    height: 100%;
-  }
-}
-
 #javascript .project_list {
   width: 500px;
 }
@@ -1081,7 +1072,7 @@ section .title {
   left: 5%;
   font-size: 150px;
   font-weight: 800;
-  text-wrap: nowrap;
+  white-space: nowrap;
   transition: 0.3s;
 }
 
@@ -1095,7 +1086,7 @@ section .title {
 @media screen and (max-width: 800px) {
   #contact>span {
     position: static;
-    font-size: 70px;
+    font-size: 60px;
   }
 }
 
@@ -1170,10 +1161,7 @@ section .title {
 
 @media screen and (max-width: 700px) {
   #contact a {
-    left: 330px;
     right: auto;
-    width: 70px;
-    height: 70px;
     bottom: -70px;
   }
 }
@@ -1192,6 +1180,7 @@ section .title {
   
 @media screen and (max-width: 1440px) {
   #contact a::before {
+    right: auto;
     top: -20px;
     font-size: 20px;
   }
