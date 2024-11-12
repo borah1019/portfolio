@@ -17,12 +17,14 @@
 
     body {
       margin: 0;
-      padding: 30px 30px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
     }
     
     .calc_wrap {
-      max-width: 350px;
-      margin: auto;
+      min-width: 350px;
       padding: 35px 25px;
       border-radius: 15px;
       box-sizing: border-box;
@@ -87,28 +89,26 @@
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="calc_wrap">
-    <div class="output">0</div>
-    <div class="btns">
-      <button type="button" class="clear">Clear</button>
-      <button type="button" class="enter">Enter</button>
-      <button type="button">7</button>
-      <button type="button">8</button>
-      <button type="button">9</button>
-      <button type="button" class="opr">+</button>
-      <button type="button">4</button>
-      <button type="button">5</button>
-      <button type="button">6</button>
-      <button type="button" class="opr">-</button>
-      <button type="button">1</button>
-      <button type="button">2</button>
-      <button type="button">3</button>
-      <button type="button" class="opr">&times;</button>
-      <button type="button">0</button>
-      <button type="button" class="dot">.</button>
-      <button type="button" class="opr">&divide;</button>
-    </div>
+  <div class="calc_wrap">
+  <div class="output">0</div>
+  <div class="btns">
+    <button type="button" class="clear">Clear</button>
+    <button type="button" class="enter">Enter</button>
+    <button type="button">7</button>
+    <button type="button">8</button>
+    <button type="button">9</button>
+    <button type="button" class="opr">+</button>
+    <button type="button">4</button>
+    <button type="button">5</button>
+    <button type="button">6</button>
+    <button type="button" class="opr">-</button>
+    <button type="button">1</button>
+    <button type="button">2</button>
+    <button type="button">3</button>
+    <button type="button" class="opr">&times;</button>
+    <button type="button">0</button>
+    <button type="button" class="dot">.</button>
+    <button type="button" class="opr">&divide;</button>
   </div>
   </div>
   <script>

@@ -13,22 +13,29 @@
     }
 
     body {
-      max-width: 350px;
-      margin: auto;
-      padding: 30px 30px 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      filter: invert(1);
     }
     
     .clock_wrap {
-      overflow: hidden;
       position: relative;
-      padding-top: 100%;
+      overflow: hidden;
     }
     
-    .clock_wrap img {
+    .clock_wrap .clock {
+      max-width: 350px;
+    }
+
+    .clock_wrap img:nth-child(n+2) {
       position: absolute;
       left: 0;
       top: 0;
       width: 100%;
+      height: 100%;
     }
   
     .clock_wrap::after {
@@ -43,6 +50,14 @@
       background: #000;
     }
   </style>
+</head>
+<body>
+  <div class="clock_wrap">
+    <img src="img/clock_analog.png" class="clock" alt="">
+    <img src="img/hand_h.png" class="hand_h" alt="">
+    <img src="img/hand_m.png" class="hand_m" alt="">
+    <img src="img/hand_s.png" class="hand_s" alt="">
+  </div>
   <script>
     $(function () {
       let now = new Date();
@@ -79,12 +94,4 @@
       }
     });
   </script>
-</head>
-<body>
-  <div class="clock_wrap">
-    <img src="img/clock_analog.png" class="clock" alt="">
-    <img src="img/hand_h.png" class="hand_h" alt="">
-    <img src="img/hand_m.png" class="hand_m" alt="">
-    <img src="img/hand_s.png" class="hand_s" alt="">
-  </div>
 </body>
