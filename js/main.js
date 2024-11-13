@@ -40,25 +40,30 @@ javaScriptProjectHead.forEach(function (e) {
 
 /* SECTION 04 - GRAPHIC */
 
-// const graphicProjectList = document.querySelectorAll('.graphic_project>li');
-// const graphicProjectModal = document.querySelector('.graphic_project_modal');
-// const graphicProjectModalList = document.querySelectorAll('.graphic_project_modal .graphic_projects>li');
+const graphicProjectList = document.querySelectorAll('.graphic_project>li');
+const graphicProjectModal = document.querySelector('.graphic_project_modal');
+const graphicProjectModalList = document.querySelectorAll('.graphic_project_modal .graphic_projects>li');
 
-// graphicProjectList.forEach(function (e, i) {
-//   e.addEventListener('click', function (){
-//     const btnClose = document.querySelector('.btn_close');
+graphicProjectList.forEach(function (e, i) {
+  e.addEventListener('click', function (){
+    const btnClose = document.querySelector('.btn_close');
 
-//     graphicProjectModalList.forEach(function (e) {
-//       e.style.display = "none";
-//     });
-//     graphicProjectModalList[i].style.display = "flex";
-
-//     graphicProjectModal.style.display = "flex";
-//     btnClose.classList.add('close');
+    graphicProjectModalList.forEach(function (e) {
+      e.style.display = "none";
+    });
     
-//     btnClose.addEventListener('click', function (){
-//       graphicProjectModal.style.display = "none";
-//       btnClose.classList.remove('close');
-//     })
-//   })
-// });
+    i < 9
+    ? graphicProjectModalList[i].style.display = "flex"
+    : graphicProjectModalList[i - 9].style.display = "flex"
+
+    graphicProjectModal.style.display = "flex";
+    btnClose.classList.add('close');
+    // btnMenu.classList.add('close');
+    
+    btnClose.addEventListener('click', function (){
+      graphicProjectModal.style.display = "none";
+      btnClose.classList.remove('close');
+      // btnMenu.classList.remove('close');
+    })
+  })
+});
