@@ -58,11 +58,13 @@ graphicProjectList.forEach(function (e, i) {
 
     graphicProjectModal.style.display = "flex";
     btnClose.classList.add('close');
+    document.querySelector('body').classList.add('modal_on');
     // btnMenu.classList.add('close');
     
     btnClose.addEventListener('click', function (){
       graphicProjectModal.style.display = "none";
       btnClose.classList.remove('close');
+      document.querySelector('body').classList.remove('modal_on');
       // btnMenu.classList.remove('close');
     })
   })

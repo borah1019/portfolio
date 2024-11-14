@@ -24,6 +24,17 @@ body {
   background: var(--color_gray1);
 }
 
+@media screen and (max-width: 599px) {
+  body.modal_on {
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 #wrap {
   overflow: hidden;
 }
@@ -105,7 +116,6 @@ h1 a {
   justify-content: space-between;
   height: 32px;
 }
-
 
 @media screen and (max-width: 1279px) and (min-width: 800px) {
   .btn_menu,
@@ -1150,7 +1160,8 @@ section {
   }
 }
 
-.sec04_graphic h2 {
+.sec04_graphic>span {
+  display: inline-block;
   position: absolute;
   left: 50%;
   top: 0;
@@ -1164,19 +1175,19 @@ section {
 }
 
 @media screen and (max-width: 1279px) and (min-width: 800px) {
-  .sec04_graphic h2 {
+  .sec04_graphic span {
     font-size: 200px;
   }
 }
 
 @media screen and (max-width: 799px) and (min-width: 600px) {
-  .sec04_graphic h2 {
+  .sec04_graphic span {
     font-size: 160px;
   }
 }
 
 @media screen and (max-width: 599px) {
-  .sec04_graphic h2 {
+  .sec04_graphic span {
     font-size: 100px;
   }
 }
@@ -1356,39 +1367,39 @@ section {
   }
 
   .graphic_projects>li:nth-child(1):before {
-    background-image: url(/img/sec04_graphic/graphic_project1.jpg);
+    background-image: url(../img/sec04_graphic/graphic_project1.jpg);
   }
 
   .graphic_projects>li:nth-child(2):before {
-    background-image: url(/img/sec04_graphic/graphic_project2.jpg);
+    background-image: url(../img/sec04_graphic/graphic_project2.jpg);
   }
 
   .graphic_projects>li:nth-child(3):before {
-    background-image: url(/img/sec04_graphic/graphic_project3.jpg);
+    background-image: url(../img/sec04_graphic/graphic_project3.jpg);
   }
 
   .graphic_projects>li:nth-child(4):before {
-    background-image: url(/img/sec04_graphic/graphic_project4.jpg);
+    background-image: url(../img/sec04_graphic/graphic_project4.jpg);
   }
 
   .graphic_projects>li:nth-child(5):before {
-    background-image: url(/img/sec04_graphic/graphic_project5.jpg);
+    background-image: url(../img/sec04_graphic/graphic_project5.jpg);
   }
 
   .graphic_projects>li:nth-child(6):before {
-    background-image: url(/img/sec04_graphic/graphic_project6.jpg);
+    background-image: url(../img/sec04_graphic/graphic_project6.jpg);
   }
 
   .graphic_projects>li:nth-child(7):before {
-    background-image: url(/img/sec04_graphic/graphic_project7.jpg);
+    background-image: url(../img/sec04_graphic/graphic_project7.jpg);
   }
 
   .graphic_projects>li:nth-child(8):before {
-    background-image: url(/img/sec04_graphic/graphic_project8.jpg);
+    background-image: url(../img/sec04_graphic/graphic_project8.jpg);
   }
 
   .graphic_projects>li:nth-child(9):before {
-    background-image: url(/img/sec04_graphic/graphic_project9.jpg);
+    background-image: url(../img/sec04_graphic/graphic_project9.jpg);
   }
 }
 
@@ -1407,9 +1418,15 @@ section {
 .graphic_projects .project_txt h3 {
   color: var(--color_white);
   font-size: 32px;
-  line-height: 1.5;
   margin-bottom: 48px;
   font-weight: var(--font_bold);
+}
+
+@media screen and (max-width: 599px) {
+  .graphic_projects .project_txt h3 {
+    font-size: 24px;
+    white-space: wrap;
+  }
 }
 
 .graphic_projects .project_txt ul {
@@ -1448,19 +1465,19 @@ section {
   font-weight: var(--font_bold);
 }
 
-@media screen and (max-width: 1279px) and (min-width: 800px) {
+@media screen and (max-width: 1279px) {
   .graphic_projects .project_txt .info_title {
     font-size: 16px;
     line-height: 1.4;
   }
 }
 
-@media screen and (max-width: 799px) {
+/* @media screen and (max-width: 799px) {
   .graphic_projects .project_txt .info_title {
     font-size: 20px;
     line-height: 1.6;
   }
-}
+} */
 
 .graphic_projects .project_txt .info_p {
   display: flex;
@@ -1468,12 +1485,12 @@ section {
   color: var(--color_white);
 }
 
-@media screen and (max-width: 799px) {
+/* @media screen and (max-width: 799px) {
   .graphic_projects .project_txt .info_p {
     font-size: 20px;
     line-height: 1.6;
   }
-}
+} */
 
 .graphic_projects .project_txt .info_color .info_p {
   align-items: center;
