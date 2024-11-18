@@ -947,7 +947,7 @@ section {
   content: '';
   width: 28px;
   height: 28px;
-  background: url(/img/common/btn_link_on.svg) no-repeat center/contain;
+  background: url(../img/common/btn_link_on.svg) no-repeat center/contain;
 }
 
 @media screen and (max-width: 1279px) and (min-width: 600px) {
@@ -1110,6 +1110,7 @@ section {
   .sec03_javaScript .project_body iframe {
     height: auto;
     min-height: 480px;
+    transform: scale(85%);
   }
 }
 
@@ -1117,7 +1118,7 @@ section {
   color: var(--color_white);
 }
 
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 599px) {
   .sec03_javaScript .project_body .info_p {
     padding: 0 20px;
     border-left: 1px solid var(--color_main);
@@ -1333,6 +1334,7 @@ section {
   .graphic_project_modal .graphic_projects {
     width: calc(100% - 164px);
     min-width: 700px;
+    min-height: auto;
   }
 }
 
