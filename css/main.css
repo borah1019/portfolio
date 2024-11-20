@@ -216,9 +216,13 @@ h1 a {
 
 .menu li {
   position: relative;
+  color: var(--color_gray1);
+  text-shadow: var(--text-border);
+  letter-spacing: 0.05em;
+  cursor: pointer;
 }
 
-.menu li:hover a {
+.menu li:hover {
   color: var(--color_main);
   text-shadow: 0;
 }
@@ -256,13 +260,6 @@ h1 a {
     width: 10px;
     height: 10px;
   }
-}
-
-.menu li a {
-  position: relative;
-  color: var(--color_gray1);
-  text-shadow: var(--text-border);
-  letter-spacing: 0.05em;
 }
 
 /* MAIN */

@@ -1,6 +1,6 @@
 /* HEADER */
 
-// GNB
+// MENU
 const menu = document.querySelector('.menu');
 const btnMenu = document.querySelector('.btn_menu');
 
@@ -8,6 +8,24 @@ btnMenu.addEventListener('click', function () {
   menu.classList.toggle('open');
   btnMenu.classList.toggle('close');
 });
+
+
+const menuList = document.querySelectorAll('.menu>li');
+const sectionList = document.querySelectorAll('section');
+
+menuList.forEach(function (e, i) {
+  e.addEventListener('click', function () {
+    menu.classList.remove('open');
+    btnMenu.classList.remove('close');
+
+    const sectionTop = sectionList[i].offsetTop;
+    console.log(sectionTop);
+    window.scrollTo({
+      top: sectionTop,
+      behavior: 'smooth'
+    });
+  })
+})
 
 /* SECTION 01 - ABOUT */
 
