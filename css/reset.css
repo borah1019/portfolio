@@ -19,7 +19,7 @@ time, mark, audio, video, button {
 }
 
 article, aside, details, figcaption, figure, 
-footer, header, hgroup, main, zmenu, nav, section {
+footer, header, hgroup, main, zmenu, nav, section, img {
 	display: block;
 }
 
@@ -40,6 +40,7 @@ q::before, q::after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
