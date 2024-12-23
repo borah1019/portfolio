@@ -865,6 +865,11 @@ h2 {
           @include mobile() {
             left: 180px;
           }
+
+          @include mobile2() {
+            left: 0;
+            bottom: calc(16px * 1.6 + 20px);
+          }
         }
 
         &::after {
@@ -877,6 +882,10 @@ h2 {
 
           @include mobile() {
             transform: translate(calc(-50% + 90px), -50%);
+          }
+          
+          @include mobile2() {
+            transform: translate(-50%, calc(-50% - calc(calc(16px * 1.6 + 20px) / 2)));
           }
         }
       }
@@ -904,7 +913,6 @@ h2 {
         @include media-down($breakpoint_laptop) {
           width: 90px;
           height: 90px;
-          transform: translate(-50%, -50%);
         }
       }
 
@@ -1062,8 +1070,14 @@ h2 {
 
         @include media-down($breakpoint_tablet) {
           width: 100%;
+          padding-top: 50%;
           border-radius: 10px 10px 0 0;
-          background-position: 0 -75px;
+          background-position: 0 -80px;
+        }
+        
+        @include mobile2() {
+          padding-top: 70%;
+          background-position: 0 -20px;
         }
       }
       
