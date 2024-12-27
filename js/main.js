@@ -9,7 +9,6 @@ btnMenu.addEventListener('click', function () {
   btnMenu.classList.toggle('close');
 });
 
-
 const menuList = document.querySelectorAll('.menu>li');
 const sectionList = document.querySelectorAll('section');
 
@@ -58,7 +57,8 @@ javaScriptProjectHead.forEach(function (e) {
 
 /* SECTION 04 - GRAPHIC */
 
-const graphicProjectList = document.querySelectorAll('.graphic_project>li');
+const graphicProjects = document.querySelectorAll('.graphic_project');
+const graphicProjectList = graphicProjects[0].querySelectorAll('li');
 const graphicProjectModal = document.querySelector('.graphic_project_modal');
 const graphicProjectModalList = document.querySelectorAll('.graphic_project_modal .graphic_projects>li');
 
@@ -86,4 +86,119 @@ graphicProjectList.forEach(function (e, i) {
       // btnMenu.classList.remove('close');
     })
   })
+  
+  // scrollTrigger
+  // gsap.registerPlugin(ScrollTrigger);
+  // gsap.to(graphicProjectList[i], {
+  //   transform: 'translateY(0)',
+  //   scrollTrigger: {
+  //     trigger: graphicProjectList[i],
+  //     start: 'top 90%',
+  //     end: '20% 80%',
+  //     scrub: 2,
+  //     markers: true
+  //   }
+  // });
+});
+
+// 정리 필요
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to(graphicProjectList[0], {
+  transform: 'translateY(0)',
+  scrollTrigger: {
+    trigger: graphicProjectList[0], 
+    start: 'top 90%',
+    end: '20% 80%',
+    scrub: 2,
+    // markers: true
+  }
+});
+
+gsap.to(graphicProjectList[1], {
+  transform: 'translateY(0)',
+  scrollTrigger: {
+    trigger: graphicProjectList[1],
+    start: '20% 90%',
+    end: '30% 80%',
+    scrub: 2,
+    // markers: true
+  }
+});
+
+gsap.to(graphicProjectList[2], {
+  transform: 'translateY(0)',
+  scrollTrigger: {
+    trigger: graphicProjectList[2],
+    start: '40% 90%',
+    end: '40% 80%',
+    scrub: 2,
+    // markers: true
+  }
+});
+
+gsap.to(graphicProjectList[3], {
+  transform: 'translateY(0)',
+  scrollTrigger: {
+    trigger: graphicProjectList[3], 
+    start: 'top 90%',
+    end: '20% 80%',
+    scrub: 2,
+    // markers: true
+  }
+});
+
+gsap.to(graphicProjectList[4], {
+  transform: 'translateY(0)',
+  scrollTrigger: {
+    trigger: graphicProjectList[4],
+    start: '20% 90%',
+    end: '25% 80%',
+    scrub: 2,
+    // markers: true
+  }
+});
+
+gsap.to(graphicProjectList[5], {
+  transform: 'translateY(0)',
+  scrollTrigger: {
+    trigger: graphicProjectList[5],
+    start: '40% 90%',
+    end: '30% 80%',
+    scrub: 2,
+    // markers: true
+  }
+});
+
+gsap.to(graphicProjectList[6], {
+  transform: 'translateY(0)',
+  scrollTrigger: {
+    trigger: graphicProjectList[6], 
+    start: 'top 90%',
+    end: '20% 80%',
+    scrub: 2,
+    // markers: true
+  }
+});
+
+gsap.to(graphicProjectList[7], {
+  transform: 'translateY(0)',
+  scrollTrigger: {
+    trigger: graphicProjectList[7],
+    start: '20% 90%',
+    end: '25% 80%',
+    scrub: 2,
+    // markers: true
+  }
+});
+
+gsap.to(graphicProjectList[8], {
+  transform: 'translateY(0)',
+  scrollTrigger: {
+    trigger: graphicProjectList[8],
+    start: '40% 90%',
+    end: '20% 80%',
+    scrub: 2,
+    // markers: true
+  }
 });
