@@ -1276,9 +1276,13 @@ section {
 }
 
 @media screen and (max-width: 799px) {
-  .graphic_project:nth-child(3) {
+  .graphic_project:nth-child(4) {
     display: flex;
   }
+}
+
+.graphic_project:nth-child(3)>li {
+  transform: translateY(200px);
 }
 
 .graphic_project>li {
@@ -1293,7 +1297,6 @@ section {
   background-position: center;
   background-size: cover;
   cursor: pointer;
-  transform: translateY(200px);
 }
 
 @media screen and (max-width: 1279px) and (min-width: 800px) {
