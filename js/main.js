@@ -28,7 +28,7 @@ menuList.forEach(function (e, i) {
 
 /* SECTION 01 - ABOUT */
 
-//skills
+// SKILLS
 const skills = document.querySelectorAll('.skills li');
 
 skills.forEach(function (e) {
@@ -62,6 +62,7 @@ const graphicProjectList = graphicProjects[0].querySelectorAll('li');
 const graphicProjectModal = document.querySelector('.graphic_project_modal');
 const graphicProjectModalList = document.querySelectorAll('.graphic_project_modal .graphic_projects>li');
 
+// GRAPHIC MODAL
 graphicProjectList.forEach(function (e, i) {
   e.addEventListener('click', function (){
     const btnClose = document.querySelector('.btn_close');
@@ -77,13 +78,11 @@ graphicProjectList.forEach(function (e, i) {
     graphicProjectModal.style.display = "flex";
     btnClose.classList.add('close');
     document.querySelector('body').classList.add('modal_on');
-    // btnMenu.classList.add('close');
     
     btnClose.addEventListener('click', function (){
       graphicProjectModal.style.display = "none";
       btnClose.classList.remove('close');
       document.querySelector('body').classList.remove('modal_on');
-      // btnMenu.classList.remove('close');
     })
   })
   
