@@ -52,7 +52,6 @@ body {
   display: none;
 }
 
-
 /* HEADER */
 
 #header {
@@ -1294,6 +1293,7 @@ section h2 {
   .sec04_graphic {
     display: flex;
     gap: 24px;
+    position: relative;
     width: calc(100% - 60px);
     padding-top: 110px;
   }
@@ -1308,6 +1308,7 @@ section h2 {
 }
 
 .sec04_graphic h2 {
+  position: absolute;
   width: 100%;
 }
 
