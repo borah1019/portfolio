@@ -1308,8 +1308,13 @@ section h2 {
 }
 
 .sec04_graphic h2 {
-  position: absolute;
   width: 100%;
+}
+
+@media screen and (max-width: 799px) {
+  .sec04_graphic h2 {
+    position: absolute;
+  }
 }
 
 .sec04_graphic .section_title {
