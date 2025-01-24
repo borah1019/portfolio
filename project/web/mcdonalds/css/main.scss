@@ -209,10 +209,10 @@ section {
 
 .btn_more {
   @include btn_more($color_main_red, $fz16, 1.5px, $color_main_red, $color_main_red, $color_white);
-}
 
-.btn_more:hover {
-  @include btn_more_hover($color_white, $color_main_red, $color_white, $color_main_red);
+  &:hover {
+    @include btn_more_hover($color_white, $color_main_red, $color_white, $color_main_red);
+  }
 }
 
 h2 {
@@ -325,6 +325,7 @@ h2 {
 
   .btn_m_allmenu {
     display: none;
+    cursor: pointer;
     
     @include media-down($breakpoint_laptop) {
       display: flex;
@@ -444,6 +445,7 @@ h2 {
     &>li {
       padding: 10px 20px;
       border-radius: 20px;
+      transition: all 0.2s;
       
       @include desktop {
         font-size: $fz20;
@@ -465,16 +467,16 @@ h2 {
       }
 
       cursor: pointer;
-    }
-
-    &>li.clicked,
-    &>li:hover {
-      color: $color_white;
-      background-color: $color_main_red;
+      
+      &.clicked,
+      &:hover {
+        color: $color_white;
+        background-color: $color_main_red;
+      }
     }
   }
 
-  .menu_box {
+  .menu_boxes {
     @include display_padding();
 
     @include desktop {
@@ -486,14 +488,7 @@ h2 {
     }
 
     .menu_list.clicked {
-      display: flex;
-    }
-    
-    .menu_list {
       @include display_flex(row, 24px, flex-start, stretch);
-      overflow: hidden;
-      width: 100%;
-      display: none;
 
       @include laptop() {
         gap: 16px;
@@ -503,10 +498,16 @@ h2 {
         flex-wrap: wrap;
         gap: 14px;
       }
-      
+
       @include mobile2 {
         gap: 10px;
       }
+    }
+    
+    .menu_list {
+      display: none;
+      overflow: hidden;
+      width: 100%;
       
       &>li:nth-of-type(n+5) {
         display: none;
@@ -705,10 +706,10 @@ h2 {
     
     @include btn_more($color_white, $fz20, 2px, $color_white, $color_white, $color_main_yellow);
     border-width: 2px;
-  }
 
-  .btn_more:hover {
+    &:hover {
       @include btn_more_hover($color_white, $color_main_red, $color_white, $color_main_red)
+    }
   }
 
   &>span {

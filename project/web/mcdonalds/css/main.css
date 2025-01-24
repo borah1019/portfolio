@@ -60,7 +60,6 @@ body {
   transform: rotate(45deg) translateY(-2px);
   transition: all 0.2s;
 }
-
 .btn_more:hover {
   content: "";
   color: #FFF;
@@ -197,6 +196,7 @@ h2 {
 }
 #header .btn_m_allmenu {
   display: none;
+  cursor: pointer;
 }
 @media (max-width: 1279px) {
   #header .btn_m_allmenu {
@@ -324,6 +324,7 @@ h2 {
 #sec02_menu .menu_tabs > li {
   padding: 10px 20px;
   border-radius: 20px;
+  transition: all 0.2s;
   cursor: pointer;
 }
 @media (min-width: 1520px) {
@@ -354,73 +355,72 @@ h2 {
   background-color: #E50001;
 }
 @media (min-width: 1520px) {
-  #sec02_menu .menu_box {
+  #sec02_menu .menu_boxes {
     padding: 0 8.85%;
   }
 }
 @media (max-width: 1519px) and (min-width: 1280px) {
-  #sec02_menu .menu_box {
+  #sec02_menu .menu_boxes {
     padding: 0 10.9%;
   }
 }
 @media (max-width: 1279px) and (min-width: 800px) {
-  #sec02_menu .menu_box {
+  #sec02_menu .menu_boxes {
     padding: 0 5.12%;
   }
 }
 @media (max-width: 799px) {
-  #sec02_menu .menu_box {
+  #sec02_menu .menu_boxes {
     padding: 0 5%;
   }
 }
 @media (min-width: 1520px) {
-  #sec02_menu .menu_box {
+  #sec02_menu .menu_boxes {
     margin: 20px 40px;
   }
 }
 @media (max-width: 1519px) {
-  #sec02_menu .menu_box {
+  #sec02_menu .menu_boxes {
     margin: 0 20px;
   }
 }
-#sec02_menu .menu_box .menu_list.clicked {
-  display: flex;
-}
-#sec02_menu .menu_box .menu_list {
+#sec02_menu .menu_boxes .menu_list.clicked {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: stretch;
   gap: 24px;
-  overflow: hidden;
-  width: 100%;
-  display: none;
 }
 @media (max-width: 1519px) and (min-width: 1280px) {
-  #sec02_menu .menu_box .menu_list {
+  #sec02_menu .menu_boxes .menu_list.clicked {
     gap: 16px;
   }
 }
 @media (max-width: 1279px) {
-  #sec02_menu .menu_box .menu_list {
+  #sec02_menu .menu_boxes .menu_list.clicked {
     flex-wrap: wrap;
     gap: 14px;
   }
 }
 @media (max-width: 600px) {
-  #sec02_menu .menu_box .menu_list {
+  #sec02_menu .menu_boxes .menu_list.clicked {
     gap: 10px;
   }
 }
-#sec02_menu .menu_box .menu_list > li:nth-of-type(n+5) {
+#sec02_menu .menu_boxes .menu_list {
+  display: none;
+  overflow: hidden;
+  width: 100%;
+}
+#sec02_menu .menu_boxes .menu_list > li:nth-of-type(n+5) {
   display: none;
 }
 @media (min-width: 800px) {
-  #sec02_menu .menu_box .menu_list > li:nth-of-type(n+4) {
+  #sec02_menu .menu_boxes .menu_list > li:nth-of-type(n+4) {
     display: none;
   }
 }
-#sec02_menu .menu_box .menu_list > li {
+#sec02_menu .menu_boxes .menu_list > li {
   flex-shrink: 0;
   width: calc((100% - 48px) / 3);
   font-weight: 700;
@@ -428,53 +428,53 @@ h2 {
   word-break: keep-all;
 }
 @media (max-width: 799px) {
-  #sec02_menu .menu_box .menu_list > li {
+  #sec02_menu .menu_boxes .menu_list > li {
     width: calc((100% - 14px) / 2);
   }
 }
 @media (max-width: 600px) {
-  #sec02_menu .menu_box .menu_list > li {
+  #sec02_menu .menu_boxes .menu_list > li {
     width: calc((100% - 10px) / 2);
   }
 }
-#sec02_menu .menu_box .menu_list > li a {
+#sec02_menu .menu_boxes .menu_list > li a {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: stretch;
   gap: 10px;
 }
-#sec02_menu .menu_box .menu_list > li a img {
+#sec02_menu .menu_boxes .menu_list > li a img {
   width: 100%;
 }
-#sec02_menu .menu_box .menu_list > li a b {
+#sec02_menu .menu_boxes .menu_list > li a b {
   height: 58px;
   font-size: 24px;
 }
 @media (max-width: 1279px) and (min-width: 800px) {
-  #sec02_menu .menu_box .menu_list > li a b {
+  #sec02_menu .menu_boxes .menu_list > li a b {
     height: 44px;
     font-size: 18px;
   }
 }
 @media (max-width: 600px) {
-  #sec02_menu .menu_box .menu_list > li a b {
+  #sec02_menu .menu_boxes .menu_list > li a b {
     height: 38px;
     font-size: 16px;
   }
 }
-#sec02_menu .menu_box .menu_list > li a span {
+#sec02_menu .menu_boxes .menu_list > li a span {
   height: 44px;
   color: #999999;
 }
 @media (max-width: 1279px) and (min-width: 800px) {
-  #sec02_menu .menu_box .menu_list > li a span {
+  #sec02_menu .menu_boxes .menu_list > li a span {
     height: 34px;
     font-size: 14px;
   }
 }
 @media (max-width: 600px) {
-  #sec02_menu .menu_box .menu_list > li a span {
+  #sec02_menu .menu_boxes .menu_list > li a span {
     height: 34px;
     font-size: 14px;
   }

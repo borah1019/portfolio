@@ -760,24 +760,24 @@ section h2 {
 
 .web_project_sticky_box {
   width: 100%;
-  height: calc((592 * 6px) + (200 * 6px) + 100vh);
+  height: calc((592 * 5px) + (200 * 5px) + 100vh);
 }
 
 @media screen and (max-width: 1279px) and (min-width: 800px) {
   .web_project_sticky_box {
-    height: calc((636 * 6px) + (200 * 6px)+ 100vh);
+    height: calc((636 * 5px) + (200 * 5px)+ 100vh);
   }
 }
 
 @media screen and (max-width: 799px) and (min-width: 600px) {
   .web_project_sticky_box {
-    height: calc((603.7 * 6px) + (200 * 6px) + 100vh);
+    height: calc((603.7 * 5px) + (200 * 5px) + 100vh);
   }
 }
 
 @media screen and (max-width: 599px) {
   .web_project_sticky_box {
-    height: calc((476.4 * 6px) + (200 * 6px) + 100vh);
+    height: calc((476.4 * 5px) + (200 * 5px) + 100vh);
   }
 }
 
@@ -889,6 +889,11 @@ section h2 {
   .web_project .project_head h3 {
     font-size: 24px;
   }
+}
+
+.web_project .project_head h3 b {
+  margin-left: 5px;
+  font-size: 16px;
 }
 
 .web_project .project_head span {
@@ -1193,10 +1198,15 @@ section h2 {
 
 .sec03_javaScript .project_head>li:hover a{
   color: var(--color_white);
+  border-bottom: 1px solid var(--color_white);
 }
 
 .sec03_javaScript .project_head>li.on {
   border-bottom: 1px solid var(--color_white);
+}
+
+.sec03_javaScript .project_head>li.on:hover a{
+  border-bottom: 0;
 }
 
 .sec03_javaScript .project_head>li.on a {
