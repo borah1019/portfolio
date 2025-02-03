@@ -37,11 +37,9 @@ skills.forEach(function (e) {
   })
 });
 
-/* SECTION 02 - WEB */
-
-/* SECTION 03 - JAVASCRIPT */
-const javaScriptProjectHead = document.querySelectorAll('.sec03_javaScript .project_head>li');
-const javaScriptProjectInfoPBox = document.querySelector('.sec03_javaScript .project_body .info_p');
+/* SECTION 02 - JAVASCRIPT */
+const javaScriptProjectHead = document.querySelectorAll('.sec02_javaScript .project_head>li');
+const javaScriptProjectInfoPBox = document.querySelector('.sec02_javaScript .project_body .info_p');
 
 javaScriptProjectHead.forEach(function (e) {
   e.addEventListener('click', function () {
@@ -54,6 +52,8 @@ javaScriptProjectHead.forEach(function (e) {
     javaScriptProjectInfoPBox.innerText = javaScriptProjectInfoP;
   })
 });
+
+/* SECTION 03 - WEB */
 
 /* SECTION 04 - GRAPHIC */
 
@@ -85,22 +85,9 @@ graphicProjectList.forEach(function (e, i) {
       document.querySelector('body').classList.remove('modal_on');
     })
   })
-  
-  // scrollTrigger
-  // gsap.registerPlugin(ScrollTrigger);
-  // gsap.to(graphicProjectList[i], {
-  //   transform: 'translateY(0)',
-  //   scrollTrigger: {
-  //     trigger: graphicProjectList[i],
-  //     start: 'top 90%',
-  //     end: '20% 80%',
-  //     scrub: 2,
-  //     markers: true
-  //   }
-  // });
 });
 
-// 정리 필요
+// SCROLL TRIGGER
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.to(graphicProjectList[0], {
