@@ -1,3 +1,14 @@
+// HEADER
+// UTIL - SEARCH
+const btnSearch = document.querySelector('.util>.btn_search');
+const searchWrap = document.querySelector('.util .pc_search_wrap');
+
+
+btnSearch.addEventListener('click', function() {
+  btnSearch.classList.toggle('opened');
+  searchWrap.classList.toggle('opened');
+})
+
 // sec02_menu
 // menu_tabs
 

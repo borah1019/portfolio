@@ -26,18 +26,55 @@
     <header id="header">
       <h1><a href="#"><span class="sr_only">맥도날드</span></a></h1>
       <nav>
-        <ul id="gnb">
-          <li><a href="#">MENU</a></li>
-          <li><a href="#">STORE</a></li>
-          <li><a href="#">NEWS</a></li>
-          <li><a href="#">STORY</a></li>
+        <ul id="gnb" class="pc_gnb">
+          <li><a href="#">MENU</a>
+            <ul class="gnb_dep1">
+              <li><a href="#">버거</a></li>
+              <li><a href="#">맥런치</a></li>
+              <li><a href="#">맥모닝</a></li>
+              <li><a href="#">해피스낵</a></li>
+              <li><a href="#">사이드 & 디저트</a></li>
+              <li><a href="#">맥카페 & 음료</a></li>
+              <li><a href="#">해피밀</a></li>
+            </ul>
+          </li>
+          <li><a href="#">STORE</a>
+            <ul class="gnb_dep1">
+              <li><a href="#">매장찾기</a></li>
+              <li><a href="#">맥딜리버리</a></li>
+              <li><a href="#">맥드라이브</a></li>
+              <li><a href="#">임차문의</a></li>
+            </ul>
+          </li>
+          <li><a href="#">NEWS</a>
+            <ul class="gnb_dep1">
+              <li><a href="#">프로모션</a></li>
+              <li><a href="#">새로운 소식</a></li>
+              <li><a href="#">이달의 해피밀</a></li>
+            </ul>
+          </li>
+          <li><a href="#">STORY</a>
+            <ul class="gnb_dep1">
+              <li><a href="#">브랜드 소개</a></li>
+                <li><a href="#">사회적 책임과 지원</a></li>
+                <li><a href="#">맥도날드 품질 이야기</a></li>
+                <li><a href="#">맥도날드 사람들</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <ul class="util">
         <li><a href="#">인재채용</a></li>
         <li><a href="#">임차문의</a></li>
         <button type="button" class="btn_language">ENG</button>
-        <button type="button" class="btn_search"><span class="sr_only">검색</span></button>
+        <button type="button" class="btn_search"><span class="sr_only">검색창 열기</span></button>
+        <button type="button" class="btn_close"><span class="sr_only">닫기</span></button>
+        <div class="pc_search_wrap">
+          <form action="">
+            <input type="text" placeholder="매장 또는 메뉴를 검색하실 수 있습니다">
+            <button class="btn_search"><span class="sr_only">검색하기</span></button>
+          </form>
+        </div>
       </ul>
       <div class="btn_m_allmenu">
         <span></span>
@@ -367,7 +404,7 @@
           </div>
           <ul class="footer_sec02">
             <li>
-              MENU
+              <a href="#">MENU</a>
               <ul>
                 <li><a href="#">버거</a></li>
                 <li><a href="#">맥런치</a></li>
@@ -379,7 +416,7 @@
               </ul>
             </li>
             <li>
-              NEWS
+              <a href="#">NEWS</a>
               <ul>
                 <li><a href="#">매장찾기</a></li>
                 <li><a href="#">맥딜리버리</a></li>
@@ -388,7 +425,7 @@
               </ul>
             </li>
             <li>
-              STORE
+              <a href="#">STORE</a>
               <ul>
                 <li><a href="#">프로모션</a></li>
                 <li><a href="#">새로운 소식</a></li>
@@ -396,7 +433,7 @@
               </ul>
             </li>
             <li>
-              STORY
+              <a href="#">STORY</a>
               <ul>
                 <li><a href="#">브랜드 소개</a></li>
                 <li><a href="#">사회적 책임과 지원</a></li>
