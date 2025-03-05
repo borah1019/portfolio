@@ -3,7 +3,6 @@
 const btnSearch = document.querySelector('.util>.btn_search');
 const searchWrap = document.querySelector('.util .pc_search_wrap');
 
-
 btnSearch.addEventListener('click', function() {
   function closeSearchWrap() {
     btnSearch.className = "btn_search";
@@ -40,15 +39,15 @@ const allmenuDep1 = document.querySelectorAll('.allmenu .allmenu_dep1');
 const allmenuDep2 = document.querySelectorAll('.allmenu .allmenu_dep1 .allmenu_dep2');
 
 allmenuDep1.forEach(function(e) {
-  const allmenuDep1Link = e.querySelector('a');
+  const allmenuDep1Link = e.querySelector('b');
 
   allmenuDep1Link.addEventListener('click', function() {
     const thisAllmenuDep2 = e.querySelector('.allmenu_dep2');
     
     allmenuDep2.forEach(function(e) {
-      e.parentElement.style.height = "64px";
-      e.parentElement.querySelector('a').classList.remove('clicked');
       e.style.opacity = '0';
+      e.parentElement.style.height = "64px";
+      e.parentElement.querySelector('b').classList.remove('clicked');
     })
 
     if (this.parentElement.offsetHeight == 64) {
@@ -63,24 +62,43 @@ allmenuDep1.forEach(function(e) {
   })
 })
 
-// sec02_menu
-// menu_tabs
+// TABS
 
-const menu_tabs = Array.from(document.querySelectorAll('#sec02_menu .menu_tabs li'));
-const menu_boxes = Array.from(document.querySelectorAll('#sec02_menu .menu_boxes ul'));
+// const tabs = Array.from(document.querySelectorAll('.tabs li'));
+// const tabBoxes = Array.from(document.querySelectorAll('.tab_box .tab_list'));
 
+// tabs.forEach(function(e) {
+//   let tabIndex;
+//   e.addEventListener('click', function() {
+//     tabIndex = tabs.indexOf(e);
+//     tabs.forEach(function(e) {
+//       e.classList.remove('clicked');
+//     })
+//     e.classList.add('clicked');
+//     tabBoxes.forEach(function(e) {
+//       e.classList.remove('clicked');
+//     })
+//     tabBoxes[tabIndex].classList.add('clicked');
+//   })
+// })
 
-menu_tabs.forEach(function(e) {
-  let menu_tab_index;
-  e.addEventListener('click', function() {
-    menu_tab_index = menu_tabs.indexOf(e);
-    menu_tabs.forEach(function(e) {
-      e.classList.remove('clicked');
+const tabs = Array.from(document.querySelectorAll('.tabs'));
+
+tabs.forEach(function(e) {
+  const tab = Array.from(e.children);
+  const tabList = Array.from(e.parentElement.querySelector('.tab_box').children);
+
+  tab.forEach(function(e) {
+    e.addEventListener('click', function() {
+      const tabIndex = tab.indexOf(e);
+      tab.forEach(function(e) {
+        e.classList.remove('clicked');
+      })
+      e.classList.add('clicked');
+      tabList.forEach(function(e) {
+        e.classList.remove('clicked');
+      })
+      tabList[tabIndex].classList.add('clicked');
     })
-    e.classList.add('clicked');
-    menu_boxes.forEach(function(e) {
-      e.classList.remove('clicked');
-    })
-    menu_boxes[menu_tab_index].classList.add('clicked');
   })
 })
