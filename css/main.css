@@ -228,7 +228,7 @@ h1 a {
 }
 
 .menu li:hover::before {
-  opacity: 100;
+  opacity: 1;
   right: -30px;
 }
 
@@ -413,7 +413,7 @@ section h2 {
   font-weight: var(--font_bold);
   letter-spacing: -0.3rem;
   text-shadow: var(--text-border);
-  animation: kewords_up 0.8s;
+  animation: keywords_en_up 0.8s;
 }
 
 @media screen and (max-width: 1279px) {
@@ -436,7 +436,7 @@ section h2 {
   }
 }
 
-@keyframes kewords_up {
+@keyframes keywords_en_up {
   0% {transform: translateY(100%)}
   100% {transform: translateY(0)}
 }
@@ -446,7 +446,7 @@ section h2 {
 }
 
 .keywords>li:hover .keywords_ko {
-  opacity: 100;
+  opacity: 1;
 }
 
 .keywords>li:nth-child(2n) {
@@ -466,6 +466,7 @@ section h2 {
   font-weight: normal;
   transition: opacity 0.5s;
   transform: translateY(45px);
+  
 }
 
 @media screen and (max-width: 1279px) {
@@ -476,18 +477,30 @@ section h2 {
 
 @media screen and (max-width: 799px) {
   .keywords>li .keywords_ko {
+    opacity: 1;
     font-size: 28px;
-    transform: translateY(22.5px);
+    animation: keywords_ko_up 0.8s forwards;
   }
+}
+
+@keyframes keywords_ko_up {
+  0% {transform: translateY(-90px)}
+  100% {transform: translateY(22.5px)}
 }
 
 @media screen and (max-width: 599px) {
   .keywords>li .keywords_ko {
     position: absolute;
-    bottom: 100px;
+    /* bottom: 100px; */
     font-size: 24px;
     transform: none;
+    animation: keywords_ko_2_up 0.8s forwards;
   }
+}
+
+@keyframes keywords_ko_2_up {
+  0% {bottom: 200px;}
+  100% {bottom: 100px;}
 }
 
 .about {
@@ -1090,7 +1103,7 @@ section h2 {
 }
 
 @media screen and (max-width: 599px) {
-  .web_project>li:nth-child(4) {
+  .web_project>li:nth-child(5) {
     display: none;
   }
 }
