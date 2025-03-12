@@ -48,8 +48,8 @@ javaScriptProjectHead.forEach(function (e) {
     })
     e.classList.add('on');
 
-    const javaScriptProjectInfoP = e.children[1].innerText;
-    javaScriptProjectInfoPBox.innerText = javaScriptProjectInfoP;
+    const javaScriptProjectInfoP = e.children[1].innerHTML;
+    javaScriptProjectInfoPBox.innerHTML = javaScriptProjectInfoP;
   })
 });
 

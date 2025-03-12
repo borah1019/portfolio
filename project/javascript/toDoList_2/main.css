@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  list-style: none;
+  line-height: 1;
+  text-decoration: none;
+  background: 0;
+}
+
+button {
+  all: unset;
+  color: #fff;
+  border: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+body {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  height: 100vh;
+  padding-top: 100px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#log_in_form {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#log_in_form input {
+  text-align: center;
+  background: #fff;
+}
+
+#log_in_form input::placeholder {
+  color: #000;
+}
+
+#log_in_form button {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+#greeting {
+  margin-bottom: 20px;
+}
+
+#to_do_list_form {
+  margin-bottom: 10px;
+}
+
+#log_in_form *,
+#to_do_list_form * {
+  padding: 10px 15px;
+  border-radius: 17px;
+  font-size: 14px;
+}
+
+#to_do_list_form input {
+  width: 220px;
+  height: 34px;
+  margin-right: 5px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+#to_do_list_form input:focus {
+  outline: 0;
+}
+
+#to_do_list_form input[type=text] {
+  color: #000;
+}
+
+#to_do_list {
+  overflow-y: scroll;
+  max-height: 250px;
+}
+
+#to_do_list::-webkit-scrollbar {
+  width: 10px;
+}
+
+#to_do_list::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+#to_do_list::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+#to_do_list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 250px;
+  margin-bottom: 5px;
+  padding: 10px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 21px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+#to_do_list li div {
+  max-width: 120px;
+  word-wrap: break-word;
+}
+
+#to_do_list li button {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+}
+
+#quote {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  text-align: center;
+}
+
+#quote b {
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+#quote span {
+  font-size: 14px;
+}
+
+.time_and_weather {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: rotate(90deg) translate(-9.75px, calc(-125px + 9.75px + 20px));
+}
+
+#time {
+  font-weight: bold;
+}
+
+#random_background {
+  opacity: .5;
+  position: fixed;
+  left: 50%;
+  right: 0;
+  top: 50%;
+  bottom: 0;
+  z-index: -100;
+  width: 100vw;
+  transform: translate(-50%, -50%);
+}

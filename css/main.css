@@ -924,7 +924,7 @@ section h2 {
   display: flex;
   align-items: center;
   gap: 38px;
-  overflow: hidden;
+  /* overflow: hidden; */
   padding: 50px 77px;
   min-height: 611.2px;
   border-left: 1px solid var(--color_main);
@@ -969,6 +969,8 @@ section h2 {
 }
 
 .sec02_javaScript .project_body .info_p {
+  position: relative;
+  overflow: visible;
   color: var(--color_white);
 }
 
@@ -978,6 +980,12 @@ section h2 {
     border-left: 1px solid var(--color_main);
     border-right: 1px solid var(--color_main);
   }
+}
+
+.sec02_javaScript .project_body .info_p a {
+  display: block;
+  position: absolute;
+  bottom: -44.8px;
 }
 
 /* SECTION 03 - WEB */
