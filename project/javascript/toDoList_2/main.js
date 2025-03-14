@@ -70,7 +70,11 @@ function saveToDo() {
 
 function deleteToDo(e) {
   const li = e.target.parentElement;
+  const liText = e.target.previousElementSibling.innerText;
+  const liIndex = toDos.indexOf(liText)
   li.remove();
+  toDos.splice(liIndex, 1);
+  saveToDo();
 }
 
 function paintToDo(newToDo) {

@@ -988,6 +988,12 @@ section h2 {
   bottom: -44.8px;
 }
 
+@media screen and (max-width: 799px) {
+  .sec02_javaScript .project_body .info_p a {
+    display: none;
+  }
+}
+
 /* SECTION 03 - WEB */
 
 .sec03_web {
