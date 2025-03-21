@@ -39,7 +39,10 @@ skills.forEach(function (e) {
 
 /* SECTION 02 - JAVASCRIPT */
 const javaScriptProjectHead = document.querySelectorAll('.sec02_javaScript .project_head>li');
+const javaScriptProjectInfoLinkPC = document.querySelector('.sec02_javaScript .project_body .link_pc');
+const javaScriptProjectInfoLinkMobile = document.querySelector('.sec02_javaScript .project_body .link_m');
 const javaScriptProjectInfoPBox = document.querySelector('.sec02_javaScript .project_body .info_p');
+const javaScriptProjectInfoSkillsBox = document.querySelector('.sec02_javaScript .project_body .info_skills');
 
 javaScriptProjectHead.forEach(function (e) {
   e.addEventListener('click', function () {
@@ -47,9 +50,20 @@ javaScriptProjectHead.forEach(function (e) {
       e.classList.remove('on');
     })
     e.classList.add('on');
-
-    const javaScriptProjectInfoP = e.children[1].innerHTML;
+    
+    const javaScriptProjectInfoP = e.querySelector('.info_p').innerHTML;
     javaScriptProjectInfoPBox.innerHTML = javaScriptProjectInfoP;
+    
+    const javaScriptProjectInfoSkills = e.querySelector('.info_skills').innerHTML;
+    javaScriptProjectInfoSkillsBox.innerHTML = javaScriptProjectInfoSkills;
+    
+    const index = Array.from(javaScriptProjectHead).indexOf(e) + 1;
+    javaScriptProjectInfoLinkPC.style.backgroundImage = `url('./img/sec02_javascript/javascript_project${index}.jpg')`;
+    javaScriptProjectInfoLinkMobile.style.backgroundImage = `url('./img/sec02_javascript/javascript_project${index}_m.jpg')`;
+
+    const javaScriptProjectInfoLink = e.querySelector('a');
+    javaScriptProjectInfoLinkPC.href = javaScriptProjectInfoLink;
+    javaScriptProjectInfoLinkMobile.href = javaScriptProjectInfoLink;
   })
 });
 
