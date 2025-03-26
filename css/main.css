@@ -1002,6 +1002,10 @@ section h2 {
   color: var(--color_white);
 }
 
+.sec02_javaScript .project_body .info_skills {
+  flex-wrap: wrap;
+}
+
 @media screen and (max-width: 599px) {
   .sec02_javaScript .project_body .info_skills {
     font-size: 14px;
