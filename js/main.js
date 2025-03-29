@@ -37,12 +37,14 @@ skills.forEach(function (e) {
   })
 });
 
-/* SECTION 02 - JAVASCRIPT */
-const javaScriptProjectHead = document.querySelectorAll('.sec02_javaScript .project_head>li');
-const javaScriptProjectInfoLinkPC = document.querySelector('.sec02_javaScript .project_body .link_pc');
-const javaScriptProjectInfoLinkMobile = document.querySelector('.sec02_javaScript .project_body .link_m');
-const javaScriptProjectInfoPBox = document.querySelector('.sec02_javaScript .project_body .info_p');
-const javaScriptProjectInfoSkillsBox = document.querySelector('.sec02_javaScript .project_body .info_skills');
+/* SECTION 02 - WEB */
+
+/* SECTION 03 - JAVASCRIPT */
+const javaScriptProjectHead = document.querySelectorAll('.sec03_javaScript .project_head>li');
+const javaScriptProjectInfoLinkPC = document.querySelector('.sec03_javaScript .project_body .link_pc');
+const javaScriptProjectInfoLinkMobile = document.querySelector('.sec03_javaScript .project_body .link_m');
+const javaScriptProjectInfoPBox = document.querySelector('.sec03_javaScript .project_body .info_p');
+const javaScriptProjectInfoSkillsBox = document.querySelector('.sec03_javaScript .project_body .info_skills');
 
 javaScriptProjectHead.forEach(function (e) {
   e.addEventListener('click', function () {
@@ -66,8 +68,6 @@ javaScriptProjectHead.forEach(function (e) {
     javaScriptProjectInfoLinkMobile.href = javaScriptProjectInfoLink;
   })
 });
-
-/* SECTION 03 - WEB */
 
 /* SECTION 04 - GRAPHIC */
 
